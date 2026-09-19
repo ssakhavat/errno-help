@@ -7,6 +7,10 @@ have something cryptic; this site helps you make sense of it.
 No account, no tracking, no clutter — most tools run entirely in your
 browser and never touch a server.
 
+![Landing page](docs/screenshots/landing.png)
+![All tools](docs/screenshots/tools-index.png)
+![CIDR calculator in action](docs/screenshots/cidr-tool.png)
+
 ## Tools
 
 **Network & security**
