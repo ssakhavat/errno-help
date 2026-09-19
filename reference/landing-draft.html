@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>errno.help</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FAF9F6;
+    --text: #1B1A17;
+    --text-dim: #6B6A63;
+    --text-faint: #A6A49B;
+    --line: #DEDBD2;
+    --accent: #A23A25;
+    --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  }
+
+  :root[data-theme="dark"]{
+    --bg: #171613;
+    --text: #EDEBE4;
+    --text-dim: #9C9A90;
+    --text-faint: #6B6A62;
+    --line: #37352E;
+    --accent: #E08A6B;
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #171613;
+      --text: #EDEBE4;
+      --text-dim: #9C9A90;
+      --text-faint: #6B6A62;
+      --line: #37352E;
+      --accent: #E08A6B;
+    }
+  }
+
+  *{ box-sizing: border-box; }
+
+  html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  body{
+    height: 100vh;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-mono);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrap{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+    padding: clamp(20px, 5vh, 48px) 24px;
+    min-height: 0;
+  }
+
+  /* ---------- top row: wordmark + cta, plain text only ---------- */
+  .top{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: clamp(24px, 6vh, 56px);
+    flex-shrink: 0;
+  }
+
+  .wordmark{
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: var(--text);
+  }
+  .wordmark .dim{ color: var(--text-faint); }
+
+  .top a.enter{
+    font-size: 13px;
+    color: var(--text-dim);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2px;
+  }
+  .top a.enter:hover{ color: var(--accent); border-color: var(--accent); }
+
+  /* ---------- main statement ---------- */
+  main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 0;
+  }
+
+  h1{
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(26px, 4.4vw, 40px);
+    line-height: 1.28;
+    letter-spacing: -0.01em;
+    margin: 0 0 20px;
+    max-width: 20ch;
+  }
+
+  .sub{
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-dim);
+    max-width: 58ch;
+    margin: 0 0 30px;
+  }
+  .sub code{
+    color: var(--text);
+    background: transparent;
+  }
+
+  .try{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13.5px;
+    margin-bottom: 4px;
+  }
+  .try .prompt{ color: var(--text-faint); }
+  .try input{
+    font-family: var(--font-mono);
+    font-size: 13.5px;
+    color: var(--text);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--line);
+    padding: 4px 0;
+    width: 100%;
+    max-width: 340px;
+  }
+  .try input:focus{ outline: none; border-color: var(--accent); }
+  .try input::placeholder{ color: var(--text-faint); }
+
+  /* ---------- tool index, plain list not cards ---------- */
+  .index{
+    flex-shrink: 0;
+    border-top: 1px solid var(--line);
+    padding-top: clamp(14px, 3vh, 22px);
+    margin-top: clamp(14px, 3vh, 22px);
+  }
+
+  .index ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 40px;
+  }
+
+  .index li{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--line);
+    break-inside: avoid;
+    font-size: 13px;
+  }
+
+  .index li .name{ color: var(--text); }
+  .index li .desc{ color: var(--text-faint); text-align: right; white-space: nowrap; }
+
+  footer{
+    flex-shrink: 0;
+    padding-top: clamp(14px, 3vh, 20px);
+    font-size: 11.5px;
+    color: var(--text-faint);
+  }
+
+  /* ---------- responsive: allow scroll on small screens ---------- */
+  @media (max-width: 620px), (max-height: 600px){
+    body{ height: auto; overflow: auto; }
+    .index ul{ columns: 1; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="top">
+      <div class="wordmark">errno<span class="dim">.help</span></div>
+      <a class="enter" href="#" onclick="return false;">Open the tools</a>
+    </div>
+
+    <main>
+      <h1>You have a code. We tell you what it means.</h1>
+      <p class="sub">A plain reference and calculator for the things IT and developer work throws at you — error codes, subnets, tokens, hashes, cron strings. Runs in your browser; most of it never touches a server.</p>
+
+      <div class="try">
+        <span class="prompt">try:</span>
+        <input type="text" placeholder="0x8007000E, 192.168.1.0/24, or a JWT" readonly>
+      </div>
+    </main>
+
+    <div class="index">
+      <ul>
+        <li><span class="name">CIDR / IPv4</span><span class="desc">subnet, mask, hosts</span></li>
+        <li><span class="name">JWT decoder</span><span class="desc">header, payload, claims</span></li>
+        <li><span class="name">Hash generator</span><span class="desc">SHA-256, SHA-1, MD5</span></li>
+        <li><span class="name">UUID / password</span><span class="desc">cryptographically random</span></li>
+        <li><span class="name">YAML ⇄ JSON</span><span class="desc">convert and validate</span></li>
+        <li><span class="name">Cron parser</span><span class="desc">human-readable schedule</span></li>
+        <li><span class="name">Windows errors</span><span class="desc">error & event ID lookup</span></li>
+        <li><span class="name">Command builders</span><span class="desc">robocopy, kubectl, chmod</span></li>
+        <li><span class="name">DNS / WHOIS</span><span class="desc">lookup and ownership</span></li>
+        <li><span class="name">GeoIP / port check</span><span class="desc">reachability, location</span></li>
+      </ul>
+    </div>
+
+    <footer>No account needed to look something up.</footer>
+
+  </div>
+</body>
+</html>

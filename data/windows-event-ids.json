@@ -1,0 +1,1604 @@
+[
+  {
+    "id": 4624,
+    "log": "Security",
+    "name": "Successful logon",
+    "description": "An account successfully logged on. Check the Logon Type field to see whether it was interactive, network, remote desktop, etc."
+  },
+  {
+    "id": 4625,
+    "log": "Security",
+    "name": "Failed logon",
+    "description": "An account failed to log on. High volume from one account or IP often indicates a brute-force attempt."
+  },
+  {
+    "id": 4634,
+    "log": "Security",
+    "name": "Account logged off",
+    "description": "An account's logon session was ended."
+  },
+  {
+    "id": 4648,
+    "log": "Security",
+    "name": "Logon with explicit credentials",
+    "description": "A process attempted to log on using explicitly supplied credentials rather than the current session's, e.g. via runas."
+  },
+  {
+    "id": 4672,
+    "log": "Security",
+    "name": "Special privileges assigned to new logon",
+    "description": "A logon was granted administrator-equivalent privileges."
+  },
+  {
+    "id": 4720,
+    "log": "Security",
+    "name": "User account created",
+    "description": "A new user account was created."
+  },
+  {
+    "id": 4722,
+    "log": "Security",
+    "name": "User account enabled",
+    "description": "A previously disabled user account was enabled."
+  },
+  {
+    "id": 4723,
+    "log": "Security",
+    "name": "Password change attempted",
+    "description": "An account attempted to change its own password."
+  },
+  {
+    "id": 4724,
+    "log": "Security",
+    "name": "Password reset attempted",
+    "description": "An attempt was made to reset an account's password (typically by an administrator)."
+  },
+  {
+    "id": 4725,
+    "log": "Security",
+    "name": "User account disabled",
+    "description": "A user account was disabled."
+  },
+  {
+    "id": 4726,
+    "log": "Security",
+    "name": "User account deleted",
+    "description": "A user account was deleted."
+  },
+  {
+    "id": 4728,
+    "log": "Security",
+    "name": "Member added to global group",
+    "description": "A member was added to a security-enabled global group."
+  },
+  {
+    "id": 4732,
+    "log": "Security",
+    "name": "Member added to local group",
+    "description": "A member was added to a security-enabled local group, e.g. local Administrators."
+  },
+  {
+    "id": 4740,
+    "log": "Security",
+    "name": "User account locked out",
+    "description": "An account was locked out, usually after too many failed logon attempts."
+  },
+  {
+    "id": 4767,
+    "log": "Security",
+    "name": "User account unlocked",
+    "description": "A previously locked-out account was unlocked."
+  },
+  {
+    "id": 4771,
+    "log": "Security",
+    "name": "Kerberos pre-authentication failed",
+    "description": "Kerberos pre-authentication failed, most often because of a bad password."
+  },
+  {
+    "id": 4776,
+    "log": "Security",
+    "name": "Credential validation attempted",
+    "description": "The domain controller attempted to validate credentials for an account using NTLM."
+  },
+  {
+    "id": 41,
+    "log": "System",
+    "name": "Kernel-Power: unexpected reboot",
+    "description": "The system rebooted without cleanly shutting down first — a crash, power loss, or hard reset."
+  },
+  {
+    "id": 6005,
+    "log": "System",
+    "name": "Event log service started",
+    "description": "Logged at boot, when the Event Log service starts. A useful marker for system startup time."
+  },
+  {
+    "id": 6006,
+    "log": "System",
+    "name": "Event log service stopped",
+    "description": "Logged during a clean shutdown, when the Event Log service stops."
+  },
+  {
+    "id": 6008,
+    "log": "System",
+    "name": "Unexpected shutdown",
+    "description": "The previous system shutdown was unexpected — the system didn't shut down cleanly."
+  },
+  {
+    "id": 6013,
+    "log": "System",
+    "name": "System uptime report",
+    "description": "Reports the system's uptime in seconds since it was last started."
+  },
+  {
+    "id": 1074,
+    "log": "System",
+    "name": "System shutdown/restart initiated",
+    "description": "A process requested a system shutdown or restart. Includes the process, user, and reason if supplied."
+  },
+  {
+    "id": 1076,
+    "log": "System",
+    "name": "Shutdown reason recorded",
+    "description": "Records the reason a user or administrator supplied for the system's last unexpected shutdown."
+  },
+  {
+    "id": 7000,
+    "log": "System",
+    "name": "Service failed to start",
+    "description": "A service failed to start; the event includes the specific error that was returned."
+  },
+  {
+    "id": 7001,
+    "log": "System",
+    "name": "Service failed — dependency",
+    "description": "A service failed to start because a service it depends on failed to start."
+  },
+  {
+    "id": 7009,
+    "log": "System",
+    "name": "Timeout waiting for service",
+    "description": "A timeout was reached while waiting for a service to connect to the service control manager."
+  },
+  {
+    "id": 7011,
+    "log": "System",
+    "name": "Timeout waiting for service response",
+    "description": "A timeout was reached while waiting for a transaction response from a service."
+  },
+  {
+    "id": 7022,
+    "log": "System",
+    "name": "Service hung on starting",
+    "description": "A service hung while starting, blocking the rest of the boot sequence."
+  },
+  {
+    "id": 7023,
+    "log": "System",
+    "name": "Service terminated with error",
+    "description": "A service terminated with a specific, non-zero error code."
+  },
+  {
+    "id": 7026,
+    "log": "System",
+    "name": "Boot/system-start driver failed to load",
+    "description": "One or more boot-start or system-start drivers failed to load."
+  },
+  {
+    "id": 7031,
+    "log": "System",
+    "name": "Service crashed, will restart",
+    "description": "A service terminated unexpectedly; the Service Control Manager will restart it per its recovery settings."
+  },
+  {
+    "id": 7034,
+    "log": "System",
+    "name": "Service crashed",
+    "description": "A service terminated unexpectedly (crashed)."
+  },
+  {
+    "id": 7036,
+    "log": "System",
+    "name": "Service entered running/stopped state",
+    "description": "Routine notice that a service transitioned to the running or stopped state."
+  },
+  {
+    "id": 51,
+    "log": "System (Disk)",
+    "name": "Disk paging error",
+    "description": "An error was detected on a device during a paging operation — often an early sign of failing storage hardware."
+  },
+  {
+    "id": 55,
+    "log": "System (Ntfs)",
+    "name": "File system corruption detected",
+    "description": "The file system structure on a volume is corrupt; a chkdsk is recommended."
+  },
+  {
+    "id": 1000,
+    "log": "Application",
+    "name": "Application Error",
+    "description": "An application crashed. Includes the faulting module and offset, useful for identifying the failing component."
+  },
+  {
+    "id": 1001,
+    "log": "Application",
+    "name": "Windows Error Reporting fault bucket",
+    "description": "Follows an Application Error event with the Windows Error Reporting fault bucket details for the crash."
+  },
+  {
+    "id": 1002,
+    "log": "Application",
+    "name": "Application Hang",
+    "description": "An application stopped responding and was flagged as hung."
+  },
+  {
+    "id": 10016,
+    "log": "System (DistributedCOM)",
+    "name": "DCOM permission warning",
+    "description": "A user or application didn't have the required DCOM launch/activation permissions for a component. Usually benign and very common."
+  },
+  {
+    "id": 4618,
+    "log": "Security",
+    "name": "A monitored security event pattern has occurred",
+    "description": "A monitored security event pattern has occurred."
+  },
+  {
+    "id": 4649,
+    "log": "Security",
+    "name": "A replay attack was detected",
+    "description": "A replay attack was detected. May be a harmless false positive due to misconfiguration error."
+  },
+  {
+    "id": 4719,
+    "log": "Security",
+    "name": "System audit policy was changed",
+    "description": "System audit policy was changed."
+  },
+  {
+    "id": 4765,
+    "log": "Security",
+    "name": "SID History was added to an account",
+    "description": "SID History was added to an account."
+  },
+  {
+    "id": 4766,
+    "log": "Security",
+    "name": "An attempt to add SID History to an account failed",
+    "description": "An attempt to add SID History to an account failed."
+  },
+  {
+    "id": 4794,
+    "log": "Security",
+    "name": "An attempt was made to set the Directory Services Restore Mode",
+    "description": "An attempt was made to set the Directory Services Restore Mode."
+  },
+  {
+    "id": 4897,
+    "log": "Security",
+    "name": "Role separation enabled",
+    "description": "Role separation enabled."
+  },
+  {
+    "id": 4964,
+    "log": "Security",
+    "name": "Special groups have been assigned to a new logon",
+    "description": "Special groups have been assigned to a new logon."
+  },
+  {
+    "id": 5124,
+    "log": "Security",
+    "name": "A security setting was updated on the OCSP Responder Service",
+    "description": "A security setting was updated on the OCSP Responder Service."
+  },
+  {
+    "id": 1102,
+    "log": "Security",
+    "name": "The audit log was cleared",
+    "description": "The audit log was cleared."
+  },
+  {
+    "id": 4621,
+    "log": "Security",
+    "name": "Administrator recovered system from CrashOnAuditFail",
+    "description": "Administrator recovered system from CrashOnAuditFail. Users who are not administrators will now be allowed to log on. Some auditable activity might not have been recorded."
+  },
+  {
+    "id": 4675,
+    "log": "Security",
+    "name": "SIDs were filtered",
+    "description": "SIDs were filtered."
+  },
+  {
+    "id": 4692,
+    "log": "Security",
+    "name": "Backup of data protection master key was attempted",
+    "description": "Backup of data protection master key was attempted."
+  },
+  {
+    "id": 4693,
+    "log": "Security",
+    "name": "Recovery of data protection master key was attempted",
+    "description": "Recovery of data protection master key was attempted."
+  },
+  {
+    "id": 4706,
+    "log": "Security",
+    "name": "A new trust was created to a domain",
+    "description": "A new trust was created to a domain."
+  },
+  {
+    "id": 4713,
+    "log": "Security",
+    "name": "Kerberos policy was changed",
+    "description": "Kerberos policy was changed."
+  },
+  {
+    "id": 4714,
+    "log": "Security",
+    "name": "Encrypted data recovery policy was changed",
+    "description": "Encrypted data recovery policy was changed."
+  },
+  {
+    "id": 4715,
+    "log": "Security",
+    "name": "The audit policy (SACL) on an object was changed",
+    "description": "The audit policy (SACL) on an object was changed."
+  },
+  {
+    "id": 4716,
+    "log": "Security",
+    "name": "Trusted domain information was modified",
+    "description": "Trusted domain information was modified."
+  },
+  {
+    "id": 4724,
+    "log": "Security",
+    "name": "An attempt was made to reset an account's password",
+    "description": "An attempt was made to reset an account's password."
+  },
+  {
+    "id": 4727,
+    "log": "Security",
+    "name": "A security-enabled global group was created",
+    "description": "A security-enabled global group was created."
+  },
+  {
+    "id": 4735,
+    "log": "Security",
+    "name": "A security-enabled local group was changed",
+    "description": "A security-enabled local group was changed."
+  },
+  {
+    "id": 4737,
+    "log": "Security",
+    "name": "A security-enabled global group was changed",
+    "description": "A security-enabled global group was changed."
+  },
+  {
+    "id": 4739,
+    "log": "Security",
+    "name": "Domain Policy was changed",
+    "description": "Domain Policy was changed."
+  },
+  {
+    "id": 4754,
+    "log": "Security",
+    "name": "A security-enabled universal group was created",
+    "description": "A security-enabled universal group was created."
+  },
+  {
+    "id": 4755,
+    "log": "Security",
+    "name": "A security-enabled universal group was changed",
+    "description": "A security-enabled universal group was changed."
+  },
+  {
+    "id": 4764,
+    "log": "Security",
+    "name": "A security-disabled group was deleted",
+    "description": "A security-disabled group was deleted."
+  },
+  {
+    "id": 4764,
+    "log": "Security",
+    "name": "A group's type was changed",
+    "description": "A group's type was changed."
+  },
+  {
+    "id": 4780,
+    "log": "Security",
+    "name": "The ACL was set on accounts which are members of administrators groups",
+    "description": "The ACL was set on accounts which are members of administrators groups."
+  },
+  {
+    "id": 4816,
+    "log": "Security",
+    "name": "RPC detected an integrity violation while decrypting an incoming me...",
+    "description": "RPC detected an integrity violation while decrypting an incoming message."
+  },
+  {
+    "id": 4865,
+    "log": "Security",
+    "name": "A trusted forest information entry was added",
+    "description": "A trusted forest information entry was added."
+  },
+  {
+    "id": 4866,
+    "log": "Security",
+    "name": "A trusted forest information entry was removed",
+    "description": "A trusted forest information entry was removed."
+  },
+  {
+    "id": 4867,
+    "log": "Security",
+    "name": "A trusted forest information entry was modified",
+    "description": "A trusted forest information entry was modified."
+  },
+  {
+    "id": 4868,
+    "log": "Security",
+    "name": "The certificate manager denied a pending certificate request",
+    "description": "The certificate manager denied a pending certificate request."
+  },
+  {
+    "id": 4870,
+    "log": "Security",
+    "name": "Certificate Services revoked a certificate",
+    "description": "Certificate Services revoked a certificate."
+  },
+  {
+    "id": 4882,
+    "log": "Security",
+    "name": "The security permissions for Certificate Services changed",
+    "description": "The security permissions for Certificate Services changed."
+  },
+  {
+    "id": 4885,
+    "log": "Security",
+    "name": "The audit filter for Certificate Services changed",
+    "description": "The audit filter for Certificate Services changed."
+  },
+  {
+    "id": 4890,
+    "log": "Security",
+    "name": "The certificate manager settings for Certificate Services changed",
+    "description": "The certificate manager settings for Certificate Services changed."
+  },
+  {
+    "id": 4892,
+    "log": "Security",
+    "name": "A property of Certificate Services changed",
+    "description": "A property of Certificate Services changed."
+  },
+  {
+    "id": 4896,
+    "log": "Security",
+    "name": "One or more rows have been deleted from the certificate database",
+    "description": "One or more rows have been deleted from the certificate database."
+  },
+  {
+    "id": 4906,
+    "log": "Security",
+    "name": "The CrashOnAuditFail value has changed",
+    "description": "The CrashOnAuditFail value has changed."
+  },
+  {
+    "id": 4907,
+    "log": "Security",
+    "name": "Auditing settings on object were changed",
+    "description": "Auditing settings on object were changed."
+  },
+  {
+    "id": 4908,
+    "log": "Security",
+    "name": "Special Groups Logon table modified",
+    "description": "Special Groups Logon table modified."
+  },
+  {
+    "id": 4912,
+    "log": "Security",
+    "name": "Per User Audit Policy was changed",
+    "description": "Per User Audit Policy was changed."
+  },
+  {
+    "id": 4960,
+    "log": "Security",
+    "name": "IPsec dropped an inbound packet that failed an integrity check",
+    "description": "IPsec dropped an inbound packet that failed an integrity check."
+  },
+  {
+    "id": 4961,
+    "log": "Security",
+    "name": "IPsec dropped an inbound packet that failed a replay check",
+    "description": "IPsec dropped an inbound packet that failed a replay check. If this problem persists, it could indicate a replay attack against this computer."
+  },
+  {
+    "id": 4962,
+    "log": "Security",
+    "name": "IPsec dropped an inbound packet that failed a replay check",
+    "description": "IPsec dropped an inbound packet that failed a replay check. The inbound packet had too low a sequence number to ensure it was not a replay."
+  },
+  {
+    "id": 4963,
+    "log": "Security",
+    "name": "IPsec dropped an inbound clear text packet that should have been se...",
+    "description": "IPsec dropped an inbound clear text packet that should have been secured."
+  },
+  {
+    "id": 4965,
+    "log": "Security",
+    "name": "IPsec received a packet from a remote computer with an incorrect Se...",
+    "description": "IPsec received a packet from a remote computer with an incorrect Security Parameter Index (SPI)."
+  },
+  {
+    "id": 4976,
+    "log": "Security",
+    "name": "During Main Mode negotiation, IPsec received an invalid negotiation...",
+    "description": "During Main Mode negotiation, IPsec received an invalid negotiation packet."
+  },
+  {
+    "id": 4977,
+    "log": "Security",
+    "name": "During Quick Mode negotiation, IPsec received an invalid negotiatio...",
+    "description": "During Quick Mode negotiation, IPsec received an invalid negotiation packet."
+  },
+  {
+    "id": 4978,
+    "log": "Security",
+    "name": "During Extended Mode negotiation, IPsec received an invalid negotia...",
+    "description": "During Extended Mode negotiation, IPsec received an invalid negotiation packet."
+  },
+  {
+    "id": 4983,
+    "log": "Security",
+    "name": "An IPsec Extended Mode negotiation failed",
+    "description": "An IPsec Extended Mode negotiation failed. The corresponding Main Mode security association has been deleted."
+  },
+  {
+    "id": 5027,
+    "log": "Security",
+    "name": "The Windows Firewall Service was unable to retrieve the security po...",
+    "description": "The Windows Firewall Service was unable to retrieve the security policy from the local storage."
+  },
+  {
+    "id": 5028,
+    "log": "Security",
+    "name": "The Windows Firewall Service was unable to parse the new security p...",
+    "description": "The Windows Firewall Service was unable to parse the new security policy."
+  },
+  {
+    "id": 5029,
+    "log": "Security",
+    "name": "The Windows Firewall Service failed to initialize the driver",
+    "description": "The Windows Firewall Service failed to initialize the driver."
+  },
+  {
+    "id": 5030,
+    "log": "Security",
+    "name": "The Windows Firewall Service failed to start",
+    "description": "The Windows Firewall Service failed to start."
+  },
+  {
+    "id": 5035,
+    "log": "Security",
+    "name": "The Windows Firewall Driver failed to start",
+    "description": "The Windows Firewall Driver failed to start."
+  },
+  {
+    "id": 5037,
+    "log": "Security",
+    "name": "The Windows Firewall Driver detected critical runtime error",
+    "description": "The Windows Firewall Driver detected critical runtime error. Terminating."
+  },
+  {
+    "id": 5038,
+    "log": "Security",
+    "name": "Code integrity determined that the image hash of a file is not valid",
+    "description": "Code integrity determined that the image hash of a file is not valid."
+  },
+  {
+    "id": 5120,
+    "log": "Security",
+    "name": "OCSP Responder Service Started",
+    "description": "OCSP Responder Service Started."
+  },
+  {
+    "id": 5121,
+    "log": "Security",
+    "name": "OCSP Responder Service Stopped",
+    "description": "OCSP Responder Service Stopped."
+  },
+  {
+    "id": 5122,
+    "log": "Security",
+    "name": "A configuration entry changed in OCSP Responder Service",
+    "description": "A configuration entry changed in OCSP Responder Service."
+  },
+  {
+    "id": 5376,
+    "log": "Security",
+    "name": "Credential Manager credentials were backed up",
+    "description": "Credential Manager credentials were backed up."
+  },
+  {
+    "id": 5377,
+    "log": "Security",
+    "name": "Credential Manager credentials were restored from a backup",
+    "description": "Credential Manager credentials were restored from a backup."
+  },
+  {
+    "id": 5453,
+    "log": "Security",
+    "name": "An IPsec negotiation with a remote computer failed because the IKEE...",
+    "description": "An IPsec negotiation with a remote computer failed because the IKEEXT service is not started."
+  },
+  {
+    "id": 5480,
+    "log": "Security",
+    "name": "IPsec Services failed to get the complete list of network interface...",
+    "description": "IPsec Services failed to get the complete list of network interfaces on the computer."
+  },
+  {
+    "id": 5483,
+    "log": "Security",
+    "name": "IPsec Services failed to initialize RPC server",
+    "description": "IPsec Services failed to initialize RPC server. IPsec Services could not be started."
+  },
+  {
+    "id": 5484,
+    "log": "Security",
+    "name": "IPsec Services has experienced a critical failure and has been shut...",
+    "description": "IPsec Services has experienced a critical failure and has been shut down."
+  },
+  {
+    "id": 5485,
+    "log": "Security",
+    "name": "IPsec Services failed to process some IPsec filters on a plug-and-p...",
+    "description": "IPsec Services failed to process some IPsec filters on a plug-and-play event for network interfaces."
+  },
+  {
+    "id": 5827,
+    "log": "Security",
+    "name": "The Netlogon service denied a vulnerable Netlogon secure channel co...",
+    "description": "The Netlogon service denied a vulnerable Netlogon secure channel connection from a machine account."
+  },
+  {
+    "id": 5828,
+    "log": "Security",
+    "name": "The Netlogon service denied a vulnerable Netlogon secure channel co...",
+    "description": "The Netlogon service denied a vulnerable Netlogon secure channel connection using a trust account."
+  },
+  {
+    "id": 6145,
+    "log": "Security",
+    "name": "One or more errors occurred while processing security policy in the...",
+    "description": "One or more errors occurred while processing security policy in the Group Policy objects."
+  },
+  {
+    "id": 6273,
+    "log": "Security",
+    "name": "Network Policy Server denied access to a user",
+    "description": "Network Policy Server denied access to a user."
+  },
+  {
+    "id": 6274,
+    "log": "Security",
+    "name": "Network Policy Server discarded the request for a user",
+    "description": "Network Policy Server discarded the request for a user."
+  },
+  {
+    "id": 6275,
+    "log": "Security",
+    "name": "Network Policy Server discarded the accounting request for a user",
+    "description": "Network Policy Server discarded the accounting request for a user."
+  },
+  {
+    "id": 6276,
+    "log": "Security",
+    "name": "Network Policy Server quarantined a user",
+    "description": "Network Policy Server quarantined a user."
+  },
+  {
+    "id": 6277,
+    "log": "Security",
+    "name": "Network Policy Server granted access to a user but put it on probat...",
+    "description": "Network Policy Server granted access to a user but put it on probation because the host did not meet the defined health policy."
+  },
+  {
+    "id": 6278,
+    "log": "Security",
+    "name": "Network Policy Server granted full access to a user because the hos...",
+    "description": "Network Policy Server granted full access to a user because the host met the defined health policy."
+  },
+  {
+    "id": 6279,
+    "log": "Security",
+    "name": "Network Policy Server locked the user account due to repeated faile...",
+    "description": "Network Policy Server locked the user account due to repeated failed authentication attempts."
+  },
+  {
+    "id": 6280,
+    "log": "Security",
+    "name": "Network Policy Server unlocked the user account",
+    "description": "Network Policy Server unlocked the user account."
+  },
+  {
+    "id": 4608,
+    "log": "Security",
+    "name": "Windows is starting up",
+    "description": "Windows is starting up."
+  },
+  {
+    "id": 4609,
+    "log": "Security",
+    "name": "Windows is shutting down",
+    "description": "Windows is shutting down."
+  },
+  {
+    "id": 4610,
+    "log": "Security",
+    "name": "An authentication package has been loaded by the Local Security Aut...",
+    "description": "An authentication package has been loaded by the Local Security Authority."
+  },
+  {
+    "id": 4611,
+    "log": "Security",
+    "name": "A trusted logon process has been registered with the Local Security...",
+    "description": "A trusted logon process has been registered with the Local Security Authority."
+  },
+  {
+    "id": 4612,
+    "log": "Security",
+    "name": "Internal resources allocated for the queuing of audit messages have...",
+    "description": "Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits."
+  },
+  {
+    "id": 4614,
+    "log": "Security",
+    "name": "A notification package has been loaded by the Security Account Manager",
+    "description": "A notification package has been loaded by the Security Account Manager."
+  },
+  {
+    "id": 4615,
+    "log": "Security",
+    "name": "Invalid use of LPC port",
+    "description": "Invalid use of LPC port."
+  },
+  {
+    "id": 4616,
+    "log": "Security",
+    "name": "The system time was changed",
+    "description": "The system time was changed."
+  },
+  {
+    "id": 4622,
+    "log": "Security",
+    "name": "A security package has been loaded by the Local Security Authority",
+    "description": "A security package has been loaded by the Local Security Authority."
+  },
+  {
+    "id": 4624,
+    "log": "Security",
+    "name": "An account was successfully logged on",
+    "description": "An account was successfully logged on."
+  },
+  {
+    "id": 4625,
+    "log": "Security",
+    "name": "An account failed to log on",
+    "description": "An account failed to log on."
+  },
+  {
+    "id": 4634,
+    "log": "Security",
+    "name": "An account was logged off",
+    "description": "An account was logged off."
+  },
+  {
+    "id": 4646,
+    "log": "Security",
+    "name": "IKE DoS-prevention mode started",
+    "description": "IKE DoS-prevention mode started."
+  },
+  {
+    "id": 4647,
+    "log": "Security",
+    "name": "User initiated logoff",
+    "description": "User initiated logoff."
+  },
+  {
+    "id": 4648,
+    "log": "Security",
+    "name": "A logon was attempted using explicit credentials",
+    "description": "A logon was attempted using explicit credentials."
+  },
+  {
+    "id": 4650,
+    "log": "Security",
+    "name": "An IPsec Main Mode security association was established",
+    "description": "An IPsec Main Mode security association was established. Extended Mode was not enabled. Certificate authentication was not used."
+  },
+  {
+    "id": 4651,
+    "log": "Security",
+    "name": "An IPsec Main Mode security association was established",
+    "description": "An IPsec Main Mode security association was established. Extended Mode was not enabled. A certificate was used for authentication."
+  },
+  {
+    "id": 4652,
+    "log": "Security",
+    "name": "An IPsec Main Mode negotiation failed",
+    "description": "An IPsec Main Mode negotiation failed."
+  },
+  {
+    "id": 4654,
+    "log": "Security",
+    "name": "An IPsec Quick Mode negotiation failed",
+    "description": "An IPsec Quick Mode negotiation failed."
+  },
+  {
+    "id": 4655,
+    "log": "Security",
+    "name": "An IPsec Main Mode security association ended",
+    "description": "An IPsec Main Mode security association ended."
+  },
+  {
+    "id": 4656,
+    "log": "Security",
+    "name": "A handle to an object was requested",
+    "description": "A handle to an object was requested."
+  },
+  {
+    "id": 4657,
+    "log": "Security",
+    "name": "A registry value was modified",
+    "description": "A registry value was modified."
+  },
+  {
+    "id": 4658,
+    "log": "Security",
+    "name": "The handle to an object was closed",
+    "description": "The handle to an object was closed."
+  },
+  {
+    "id": 4659,
+    "log": "Security",
+    "name": "A handle to an object was requested with intent to delete",
+    "description": "A handle to an object was requested with intent to delete."
+  },
+  {
+    "id": 4660,
+    "log": "Security",
+    "name": "An object was deleted",
+    "description": "An object was deleted."
+  },
+  {
+    "id": 4661,
+    "log": "Security",
+    "name": "A handle to an object was requested",
+    "description": "A handle to an object was requested."
+  },
+  {
+    "id": 4662,
+    "log": "Security",
+    "name": "An operation was performed on an object",
+    "description": "An operation was performed on an object."
+  },
+  {
+    "id": 4663,
+    "log": "Security",
+    "name": "An attempt was made to access an object",
+    "description": "An attempt was made to access an object."
+  },
+  {
+    "id": 4664,
+    "log": "Security",
+    "name": "An attempt was made to create a hard link",
+    "description": "An attempt was made to create a hard link."
+  },
+  {
+    "id": 4665,
+    "log": "Security",
+    "name": "An attempt was made to create an application client context",
+    "description": "An attempt was made to create an application client context."
+  },
+  {
+    "id": 4666,
+    "log": "Security",
+    "name": "An application attempted an operation",
+    "description": "An application attempted an operation."
+  },
+  {
+    "id": 4667,
+    "log": "Security",
+    "name": "An application client context was deleted",
+    "description": "An application client context was deleted."
+  },
+  {
+    "id": 4668,
+    "log": "Security",
+    "name": "An application was initialized",
+    "description": "An application was initialized."
+  },
+  {
+    "id": 4670,
+    "log": "Security",
+    "name": "Permissions on an object were changed",
+    "description": "Permissions on an object were changed."
+  },
+  {
+    "id": 4671,
+    "log": "Security",
+    "name": "An application attempted to access a blocked ordinal through the TBS",
+    "description": "An application attempted to access a blocked ordinal through the TBS."
+  },
+  {
+    "id": 4672,
+    "log": "Security",
+    "name": "Special privileges assigned to new logon",
+    "description": "Special privileges assigned to new logon."
+  },
+  {
+    "id": 4673,
+    "log": "Security",
+    "name": "A privileged service was called",
+    "description": "A privileged service was called."
+  },
+  {
+    "id": 4674,
+    "log": "Security",
+    "name": "An operation was attempted on a privileged object",
+    "description": "An operation was attempted on a privileged object."
+  },
+  {
+    "id": 4688,
+    "log": "Security",
+    "name": "A new process has been created",
+    "description": "A new process has been created."
+  },
+  {
+    "id": 4689,
+    "log": "Security",
+    "name": "A process has exited",
+    "description": "A process has exited."
+  },
+  {
+    "id": 4690,
+    "log": "Security",
+    "name": "An attempt was made to duplicate a handle to an object",
+    "description": "An attempt was made to duplicate a handle to an object."
+  },
+  {
+    "id": 4691,
+    "log": "Security",
+    "name": "Indirect access to an object was requested",
+    "description": "Indirect access to an object was requested."
+  },
+  {
+    "id": 4694,
+    "log": "Security",
+    "name": "Protection of auditable protected data was attempted",
+    "description": "Protection of auditable protected data was attempted."
+  },
+  {
+    "id": 4695,
+    "log": "Security",
+    "name": "Unprotection of auditable protected data was attempted",
+    "description": "Unprotection of auditable protected data was attempted."
+  },
+  {
+    "id": 4696,
+    "log": "Security",
+    "name": "A primary token was assigned to process",
+    "description": "A primary token was assigned to process."
+  },
+  {
+    "id": 4697,
+    "log": "Security",
+    "name": "Attempt to install a service",
+    "description": "Attempt to install a service."
+  },
+  {
+    "id": 4698,
+    "log": "Security",
+    "name": "A scheduled task was created",
+    "description": "A scheduled task was created."
+  },
+  {
+    "id": 4699,
+    "log": "Security",
+    "name": "A scheduled task was deleted",
+    "description": "A scheduled task was deleted."
+  },
+  {
+    "id": 4700,
+    "log": "Security",
+    "name": "A scheduled task was enabled",
+    "description": "A scheduled task was enabled."
+  },
+  {
+    "id": 4701,
+    "log": "Security",
+    "name": "A scheduled task was disabled",
+    "description": "A scheduled task was disabled."
+  },
+  {
+    "id": 4702,
+    "log": "Security",
+    "name": "A scheduled task was updated",
+    "description": "A scheduled task was updated."
+  },
+  {
+    "id": 4704,
+    "log": "Security",
+    "name": "A user right was assigned",
+    "description": "A user right was assigned."
+  },
+  {
+    "id": 4705,
+    "log": "Security",
+    "name": "A user right was removed",
+    "description": "A user right was removed."
+  },
+  {
+    "id": 4707,
+    "log": "Security",
+    "name": "A trust to a domain was removed",
+    "description": "A trust to a domain was removed."
+  },
+  {
+    "id": 4709,
+    "log": "Security",
+    "name": "IPsec Services was started",
+    "description": "IPsec Services was started."
+  },
+  {
+    "id": 4710,
+    "log": "Security",
+    "name": "IPsec Services was disabled",
+    "description": "IPsec Services was disabled."
+  },
+  {
+    "id": 4712,
+    "log": "Security",
+    "name": "IPsec Services encountered a potentially serious failure",
+    "description": "IPsec Services encountered a potentially serious failure."
+  },
+  {
+    "id": 4717,
+    "log": "Security",
+    "name": "System security access was granted to an account",
+    "description": "System security access was granted to an account."
+  },
+  {
+    "id": 4718,
+    "log": "Security",
+    "name": "System security access was removed from an account",
+    "description": "System security access was removed from an account."
+  },
+  {
+    "id": 4720,
+    "log": "Security",
+    "name": "A user account was created",
+    "description": "A user account was created."
+  },
+  {
+    "id": 4722,
+    "log": "Security",
+    "name": "A user account was enabled",
+    "description": "A user account was enabled."
+  },
+  {
+    "id": 4723,
+    "log": "Security",
+    "name": "An attempt was made to change an account's password",
+    "description": "An attempt was made to change an account's password."
+  },
+  {
+    "id": 4729,
+    "log": "Security",
+    "name": "A member was removed from a security-enabled global group",
+    "description": "A member was removed from a security-enabled global group."
+  },
+  {
+    "id": 4730,
+    "log": "Security",
+    "name": "A security-enabled global group was deleted",
+    "description": "A security-enabled global group was deleted."
+  },
+  {
+    "id": 4731,
+    "log": "Security",
+    "name": "A security-enabled local group was created",
+    "description": "A security-enabled local group was created."
+  },
+  {
+    "id": 4732,
+    "log": "Security",
+    "name": "A member was added to a security-enabled local group",
+    "description": "A member was added to a security-enabled local group."
+  },
+  {
+    "id": 4733,
+    "log": "Security",
+    "name": "A member was removed from a security-enabled local group",
+    "description": "A member was removed from a security-enabled local group."
+  },
+  {
+    "id": 4734,
+    "log": "Security",
+    "name": "A security-enabled local group was deleted",
+    "description": "A security-enabled local group was deleted."
+  },
+  {
+    "id": 4738,
+    "log": "Security",
+    "name": "A user account was changed",
+    "description": "A user account was changed."
+  },
+  {
+    "id": 4740,
+    "log": "Security",
+    "name": "A user account was locked out",
+    "description": "A user account was locked out."
+  },
+  {
+    "id": 4741,
+    "log": "Security",
+    "name": "A computer account was changed",
+    "description": "A computer account was changed."
+  },
+  {
+    "id": 4742,
+    "log": "Security",
+    "name": "A computer account was changed",
+    "description": "A computer account was changed."
+  },
+  {
+    "id": 4743,
+    "log": "Security",
+    "name": "A computer account was deleted",
+    "description": "A computer account was deleted."
+  },
+  {
+    "id": 4744,
+    "log": "Security",
+    "name": "A security-disabled local group was created",
+    "description": "A security-disabled local group was created."
+  },
+  {
+    "id": 4745,
+    "log": "Security",
+    "name": "A security-disabled local group was changed",
+    "description": "A security-disabled local group was changed."
+  },
+  {
+    "id": 4746,
+    "log": "Security",
+    "name": "A member was added to a security-disabled local group",
+    "description": "A member was added to a security-disabled local group."
+  },
+  {
+    "id": 4747,
+    "log": "Security",
+    "name": "A member was removed from a security-disabled local group",
+    "description": "A member was removed from a security-disabled local group."
+  },
+  {
+    "id": 4748,
+    "log": "Security",
+    "name": "A security-disabled local group was deleted",
+    "description": "A security-disabled local group was deleted."
+  },
+  {
+    "id": 4749,
+    "log": "Security",
+    "name": "A security-disabled global group was created",
+    "description": "A security-disabled global group was created."
+  },
+  {
+    "id": 4750,
+    "log": "Security",
+    "name": "A security-disabled global group was changed",
+    "description": "A security-disabled global group was changed."
+  },
+  {
+    "id": 4751,
+    "log": "Security",
+    "name": "A member was added to a security-disabled global group",
+    "description": "A member was added to a security-disabled global group."
+  },
+  {
+    "id": 4752,
+    "log": "Security",
+    "name": "A member was removed from a security-disabled global group",
+    "description": "A member was removed from a security-disabled global group."
+  },
+  {
+    "id": 4753,
+    "log": "Security",
+    "name": "A security-disabled global group was deleted",
+    "description": "A security-disabled global group was deleted."
+  },
+  {
+    "id": 4756,
+    "log": "Security",
+    "name": "A member was added to a security-enabled universal group",
+    "description": "A member was added to a security-enabled universal group."
+  },
+  {
+    "id": 4757,
+    "log": "Security",
+    "name": "A member was removed from a security-enabled universal group",
+    "description": "A member was removed from a security-enabled universal group."
+  },
+  {
+    "id": 4758,
+    "log": "Security",
+    "name": "A security-enabled universal group was deleted",
+    "description": "A security-enabled universal group was deleted."
+  },
+  {
+    "id": 4759,
+    "log": "Security",
+    "name": "A security-disabled universal group was created",
+    "description": "A security-disabled universal group was created."
+  },
+  {
+    "id": 4760,
+    "log": "Security",
+    "name": "A security-disabled universal group was changed",
+    "description": "A security-disabled universal group was changed."
+  },
+  {
+    "id": 4761,
+    "log": "Security",
+    "name": "A member was added to a security-disabled universal group",
+    "description": "A member was added to a security-disabled universal group."
+  },
+  {
+    "id": 4762,
+    "log": "Security",
+    "name": "A member was removed from a security-disabled universal group",
+    "description": "A member was removed from a security-disabled universal group."
+  },
+  {
+    "id": 4767,
+    "log": "Security",
+    "name": "A user account was unlocked",
+    "description": "A user account was unlocked."
+  },
+  {
+    "id": 4768,
+    "log": "Security",
+    "name": "A Kerberos authentication ticket (TGT) was requested",
+    "description": "A Kerberos authentication ticket (TGT) was requested."
+  },
+  {
+    "id": 4769,
+    "log": "Security",
+    "name": "A Kerberos service ticket was requested",
+    "description": "A Kerberos service ticket was requested."
+  },
+  {
+    "id": 4770,
+    "log": "Security",
+    "name": "A Kerberos service ticket was renewed",
+    "description": "A Kerberos service ticket was renewed."
+  },
+  {
+    "id": 4771,
+    "log": "Security",
+    "name": "Kerberos pre-authentication failed",
+    "description": "Kerberos pre-authentication failed."
+  },
+  {
+    "id": 4772,
+    "log": "Security",
+    "name": "A Kerberos authentication ticket request failed",
+    "description": "A Kerberos authentication ticket request failed."
+  },
+  {
+    "id": 4774,
+    "log": "Security",
+    "name": "An account was mapped for logon",
+    "description": "An account was mapped for logon."
+  },
+  {
+    "id": 4775,
+    "log": "Security",
+    "name": "An account could not be mapped for logon",
+    "description": "An account could not be mapped for logon."
+  },
+  {
+    "id": 4776,
+    "log": "Security",
+    "name": "The domain controller attempted to validate the credentials for an ...",
+    "description": "The domain controller attempted to validate the credentials for an account."
+  },
+  {
+    "id": 4777,
+    "log": "Security",
+    "name": "The domain controller failed to validate the credentials for an acc...",
+    "description": "The domain controller failed to validate the credentials for an account."
+  },
+  {
+    "id": 4778,
+    "log": "Security",
+    "name": "A session was reconnected to a Window Station",
+    "description": "A session was reconnected to a Window Station."
+  },
+  {
+    "id": 4779,
+    "log": "Security",
+    "name": "A session was disconnected from a Window Station",
+    "description": "A session was disconnected from a Window Station."
+  },
+  {
+    "id": 4781,
+    "log": "Security",
+    "name": "The name of an account was changed",
+    "description": "The name of an account was changed."
+  },
+  {
+    "id": 4782,
+    "log": "Security",
+    "name": "The password hash an account was accessed",
+    "description": "The password hash an account was accessed."
+  },
+  {
+    "id": 4783,
+    "log": "Security",
+    "name": "A basic application group was created",
+    "description": "A basic application group was created."
+  },
+  {
+    "id": 4785,
+    "log": "Security",
+    "name": "A member was added to a basic application group",
+    "description": "A member was added to a basic application group."
+  },
+  {
+    "id": 4786,
+    "log": "Security",
+    "name": "A member was removed from a basic application group",
+    "description": "A member was removed from a basic application group."
+  },
+  {
+    "id": 4789,
+    "log": "Security",
+    "name": "A basic application group was deleted",
+    "description": "A basic application group was deleted."
+  },
+  {
+    "id": 4793,
+    "log": "Security",
+    "name": "The Password Policy Checking API was called",
+    "description": "The Password Policy Checking API was called."
+  },
+  {
+    "id": 4800,
+    "log": "Security",
+    "name": "The workstation was locked",
+    "description": "The workstation was locked."
+  },
+  {
+    "id": 4801,
+    "log": "Security",
+    "name": "The workstation was unlocked",
+    "description": "The workstation was unlocked."
+  },
+  {
+    "id": 4802,
+    "log": "Security",
+    "name": "The screen saver was invoked",
+    "description": "The screen saver was invoked."
+  },
+  {
+    "id": 4803,
+    "log": "Security",
+    "name": "The screen saver was dismissed",
+    "description": "The screen saver was dismissed."
+  },
+  {
+    "id": 4864,
+    "log": "Security",
+    "name": "A namespace collision was detected",
+    "description": "A namespace collision was detected."
+  },
+  {
+    "id": 4869,
+    "log": "Security",
+    "name": "Certificate Services received a resubmitted certificate request",
+    "description": "Certificate Services received a resubmitted certificate request."
+  },
+  {
+    "id": 4880,
+    "log": "Security",
+    "name": "Certificate Services started",
+    "description": "Certificate Services started."
+  },
+  {
+    "id": 4881,
+    "log": "Security",
+    "name": "Certificate Services stopped",
+    "description": "Certificate Services stopped."
+  },
+  {
+    "id": 4886,
+    "log": "Security",
+    "name": "Certificate Services received a certificate request",
+    "description": "Certificate Services received a certificate request."
+  },
+  {
+    "id": 4887,
+    "log": "Security",
+    "name": "Certificate Services approved a certificate request and issued a ce...",
+    "description": "Certificate Services approved a certificate request and issued a certificate."
+  },
+  {
+    "id": 4888,
+    "log": "Security",
+    "name": "Certificate Services denied a certificate request",
+    "description": "Certificate Services denied a certificate request."
+  },
+  {
+    "id": 4889,
+    "log": "Security",
+    "name": "Certificate Services set the status of a certificate request to pen...",
+    "description": "Certificate Services set the status of a certificate request to pending."
+  },
+  {
+    "id": 4898,
+    "log": "Security",
+    "name": "Certificate Services loaded a template",
+    "description": "Certificate Services loaded a template."
+  },
+  {
+    "id": 5136,
+    "log": "Security",
+    "name": "A directory service object was modified",
+    "description": "A directory service object was modified."
+  },
+  {
+    "id": 5137,
+    "log": "Security",
+    "name": "A directory service object was created",
+    "description": "A directory service object was created."
+  },
+  {
+    "id": 5138,
+    "log": "Security",
+    "name": "A directory service object was undeleted",
+    "description": "A directory service object was undeleted."
+  },
+  {
+    "id": 5139,
+    "log": "Security",
+    "name": "A directory service object was moved",
+    "description": "A directory service object was moved."
+  },
+  {
+    "id": 5140,
+    "log": "Security",
+    "name": "A network share object was accessed",
+    "description": "A network share object was accessed."
+  },
+  {
+    "id": 5141,
+    "log": "Security",
+    "name": "A directory service object was deleted",
+    "description": "A directory service object was deleted."
+  },
+  {
+    "id": 5152,
+    "log": "Security",
+    "name": "The Windows Filtering Platform blocked a packet",
+    "description": "The Windows Filtering Platform blocked a packet."
+  },
+  {
+    "id": 5153,
+    "log": "Security",
+    "name": "A more restrictive Windows Filtering Platform filter has blocked a ...",
+    "description": "A more restrictive Windows Filtering Platform filter has blocked a packet."
+  },
+  {
+    "id": 5154,
+    "log": "Security",
+    "name": "The Windows Filtering Platform has permitted an application or serv...",
+    "description": "The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections."
+  },
+  {
+    "id": 5155,
+    "log": "Security",
+    "name": "The Windows Filtering Platform has blocked an application or servic...",
+    "description": "The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections."
+  },
+  {
+    "id": 5156,
+    "log": "Security",
+    "name": "The Windows Filtering Platform has allowed a connection",
+    "description": "The Windows Filtering Platform has allowed a connection."
+  },
+  {
+    "id": 5157,
+    "log": "Security",
+    "name": "The Windows Filtering Platform has blocked a connection",
+    "description": "The Windows Filtering Platform has blocked a connection."
+  },
+  {
+    "id": 5158,
+    "log": "Security",
+    "name": "The Windows Filtering Platform has permitted a bind to a local port",
+    "description": "The Windows Filtering Platform has permitted a bind to a local port."
+  },
+  {
+    "id": 5159,
+    "log": "Security",
+    "name": "The Windows Filtering Platform has blocked a bind to a local port",
+    "description": "The Windows Filtering Platform has blocked a bind to a local port."
+  },
+  {
+    "id": 5378,
+    "log": "Security",
+    "name": "The requested credentials delegation was disallowed by policy",
+    "description": "The requested credentials delegation was disallowed by policy."
+  },
+  {
+    "id": 5632,
+    "log": "Security",
+    "name": "A request was made to authenticate to a wireless network",
+    "description": "A request was made to authenticate to a wireless network."
+  },
+  {
+    "id": 5633,
+    "log": "Security",
+    "name": "A request was made to authenticate to a wired network",
+    "description": "A request was made to authenticate to a wired network."
+  },
+  {
+    "id": 5712,
+    "log": "Security",
+    "name": "A Remote Procedure Call (RPC) was attempted",
+    "description": "A Remote Procedure Call (RPC) was attempted."
+  },
+  {
+    "id": 5888,
+    "log": "Security",
+    "name": "An object in the COM+ Catalog was modified",
+    "description": "An object in the COM+ Catalog was modified."
+  },
+  {
+    "id": 5889,
+    "log": "Security",
+    "name": "An object was deleted from the COM+ Catalog",
+    "description": "An object was deleted from the COM+ Catalog."
+  },
+  {
+    "id": 5890,
+    "log": "Security",
+    "name": "An object was added to the COM+ Catalog",
+    "description": "An object was added to the COM+ Catalog."
+  },
+  {
+    "id": 6008,
+    "log": "Security",
+    "name": "The previous system shutdown was unexpected",
+    "description": "The previous system shutdown was unexpected."
+  },
+  {
+    "id": 6144,
+    "log": "Security",
+    "name": "Security policy in the Group Policy objects has been applied succes...",
+    "description": "Security policy in the Group Policy objects has been applied successfully."
+  },
+  {
+    "id": 6272,
+    "log": "Security",
+    "name": "Network Policy Server granted access to a user",
+    "description": "Network Policy Server granted access to a user."
+  }
+]

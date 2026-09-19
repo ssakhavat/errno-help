@@ -1,0 +1,2447 @@
+[
+  {
+    "code": "0",
+    "name": "ERROR_SUCCESS",
+    "description": "The operation completed successfully."
+  },
+  {
+    "code": "1",
+    "name": "ERROR_INVALID_FUNCTION",
+    "description": "Incorrect function."
+  },
+  {
+    "code": "2",
+    "name": "ERROR_FILE_NOT_FOUND",
+    "description": "The system cannot find the file specified."
+  },
+  {
+    "code": "3",
+    "name": "ERROR_PATH_NOT_FOUND",
+    "description": "The system cannot find the path specified."
+  },
+  {
+    "code": "4",
+    "name": "ERROR_TOO_MANY_OPEN_FILES",
+    "description": "The system cannot open the file."
+  },
+  {
+    "code": "5",
+    "name": "ERROR_ACCESS_DENIED",
+    "description": "Access is denied."
+  },
+  {
+    "code": "6",
+    "name": "ERROR_INVALID_HANDLE",
+    "description": "The handle is invalid."
+  },
+  {
+    "code": "7",
+    "name": "ERROR_ARENA_TRASHED",
+    "description": "The storage control blocks were destroyed."
+  },
+  {
+    "code": "8",
+    "name": "ERROR_NOT_ENOUGH_MEMORY",
+    "description": "Not enough memory resources are available to process this command."
+  },
+  {
+    "code": "9",
+    "name": "ERROR_INVALID_BLOCK",
+    "description": "The storage control block address is invalid."
+  },
+  {
+    "code": "10",
+    "name": "ERROR_BAD_ENVIRONMENT",
+    "description": "The environment is incorrect."
+  },
+  {
+    "code": "11",
+    "name": "ERROR_BAD_FORMAT",
+    "description": "An attempt was made to load a program with an incorrect format."
+  },
+  {
+    "code": "12",
+    "name": "ERROR_INVALID_ACCESS",
+    "description": "The access code is invalid."
+  },
+  {
+    "code": "13",
+    "name": "ERROR_INVALID_DATA",
+    "description": "The data is invalid."
+  },
+  {
+    "code": "14",
+    "name": "ERROR_OUTOFMEMORY",
+    "description": "Not enough storage is available to complete this operation."
+  },
+  {
+    "code": "15",
+    "name": "ERROR_INVALID_DRIVE",
+    "description": "The system cannot find the drive specified."
+  },
+  {
+    "code": "16",
+    "name": "ERROR_CURRENT_DIRECTORY",
+    "description": "The directory cannot be removed."
+  },
+  {
+    "code": "17",
+    "name": "ERROR_NOT_SAME_DEVICE",
+    "description": "The system cannot move the file to a different disk drive."
+  },
+  {
+    "code": "18",
+    "name": "ERROR_NO_MORE_FILES",
+    "description": "There are no more files."
+  },
+  {
+    "code": "19",
+    "name": "ERROR_WRITE_PROTECT",
+    "description": "The media is write protected."
+  },
+  {
+    "code": "20",
+    "name": "ERROR_BAD_UNIT",
+    "description": "The system cannot find the device specified."
+  },
+  {
+    "code": "21",
+    "name": "ERROR_NOT_READY",
+    "description": "The device is not ready."
+  },
+  {
+    "code": "22",
+    "name": "ERROR_BAD_COMMAND",
+    "description": "The device does not recognize the command."
+  },
+  {
+    "code": "23",
+    "name": "ERROR_CRC",
+    "description": "Data error (cyclic redundancy check)."
+  },
+  {
+    "code": "24",
+    "name": "ERROR_BAD_LENGTH",
+    "description": "The program issued a command but the command length is incorrect."
+  },
+  {
+    "code": "25",
+    "name": "ERROR_SEEK",
+    "description": "The drive cannot locate a specific area or track on the disk."
+  },
+  {
+    "code": "26",
+    "name": "ERROR_NOT_DOS_DISK",
+    "description": "The specified disk or diskette cannot be accessed."
+  },
+  {
+    "code": "27",
+    "name": "ERROR_SECTOR_NOT_FOUND",
+    "description": "The drive cannot find the sector requested."
+  },
+  {
+    "code": "28",
+    "name": "ERROR_OUT_OF_PAPER",
+    "description": "The printer is out of paper."
+  },
+  {
+    "code": "29",
+    "name": "ERROR_WRITE_FAULT",
+    "description": "The system cannot write to the specified device."
+  },
+  {
+    "code": "30",
+    "name": "ERROR_READ_FAULT",
+    "description": "The system cannot read from the specified device."
+  },
+  {
+    "code": "31",
+    "name": "ERROR_GEN_FAILURE",
+    "description": "A device attached to the system is not functioning."
+  },
+  {
+    "code": "32",
+    "name": "ERROR_SHARING_VIOLATION",
+    "description": "The process cannot access the file because it is being used by another process."
+  },
+  {
+    "code": "33",
+    "name": "ERROR_LOCK_VIOLATION",
+    "description": "The process cannot access the file because another process has locked a portion of the file."
+  },
+  {
+    "code": "34",
+    "name": "ERROR_WRONG_DISK",
+    "description": "The wrong diskette is in the drive. Insert %2 (Volume Serial Number: %3) into drive %1."
+  },
+  {
+    "code": "36",
+    "name": "ERROR_SHARING_BUFFER_EXCEEDED",
+    "description": "Too many files opened for sharing."
+  },
+  {
+    "code": "38",
+    "name": "ERROR_HANDLE_EOF",
+    "description": "Reached the end of the file."
+  },
+  {
+    "code": "39",
+    "name": "ERROR_HANDLE_DISK_FULL",
+    "description": "The disk is full."
+  },
+  {
+    "code": "50",
+    "name": "ERROR_NOT_SUPPORTED",
+    "description": "The request is not supported."
+  },
+  {
+    "code": "51",
+    "name": "ERROR_REM_NOT_LIST",
+    "description": "Windows cannot find the network path. Verify that the network path is correct and the destination computer is not busy or turned off. If Windows still cannot find the network path, contact your network administrator."
+  },
+  {
+    "code": "52",
+    "name": "ERROR_DUP_NAME",
+    "description": "You were not connected because a duplicate name exists on the network. If joining a domain, go to System in Control Panel to change the computer name and try again. If joining a workgroup, choose another workgroup name."
+  },
+  {
+    "code": "53",
+    "name": "ERROR_BAD_NETPATH",
+    "description": "The network path was not found."
+  },
+  {
+    "code": "54",
+    "name": "ERROR_NETWORK_BUSY",
+    "description": "The network is busy."
+  },
+  {
+    "code": "55",
+    "name": "ERROR_DEV_NOT_EXIST",
+    "description": "The specified network resource or device is no longer available."
+  },
+  {
+    "code": "56",
+    "name": "ERROR_TOO_MANY_CMDS",
+    "description": "The network BIOS command limit has been reached."
+  },
+  {
+    "code": "57",
+    "name": "ERROR_ADAP_HDW_ERR",
+    "description": "A network adapter hardware error occurred."
+  },
+  {
+    "code": "58",
+    "name": "ERROR_BAD_NET_RESP",
+    "description": "The specified server cannot perform the requested operation."
+  },
+  {
+    "code": "59",
+    "name": "ERROR_UNEXP_NET_ERR",
+    "description": "An unexpected network error occurred."
+  },
+  {
+    "code": "60",
+    "name": "ERROR_BAD_REM_ADAP",
+    "description": "The remote adapter is not compatible."
+  },
+  {
+    "code": "61",
+    "name": "ERROR_PRINTQ_FULL",
+    "description": "The printer queue is full."
+  },
+  {
+    "code": "62",
+    "name": "ERROR_NO_SPOOL_SPACE",
+    "description": "Space to store the file waiting to be printed is not available on the server."
+  },
+  {
+    "code": "63",
+    "name": "ERROR_PRINT_CANCELLED",
+    "description": "Your file waiting to be printed was deleted."
+  },
+  {
+    "code": "64",
+    "name": "ERROR_NETNAME_DELETED",
+    "description": "The specified network name is no longer available."
+  },
+  {
+    "code": "65",
+    "name": "ERROR_NETWORK_ACCESS_DENIED",
+    "description": "Network access is denied."
+  },
+  {
+    "code": "66",
+    "name": "ERROR_BAD_DEV_TYPE",
+    "description": "The network resource type is not correct."
+  },
+  {
+    "code": "67",
+    "name": "ERROR_BAD_NET_NAME",
+    "description": "The network name cannot be found."
+  },
+  {
+    "code": "68",
+    "name": "ERROR_TOO_MANY_NAMES",
+    "description": "The name limit for the local computer network adapter card was exceeded."
+  },
+  {
+    "code": "69",
+    "name": "ERROR_TOO_MANY_SESS",
+    "description": "The network BIOS session limit was exceeded."
+  },
+  {
+    "code": "70",
+    "name": "ERROR_SHARING_PAUSED",
+    "description": "The remote server has been paused or is in the process of being started."
+  },
+  {
+    "code": "71",
+    "name": "ERROR_REQ_NOT_ACCEP",
+    "description": "No more connections can be made to this remote computer at this time because there are already as many connections as the computer can accept."
+  },
+  {
+    "code": "72",
+    "name": "ERROR_REDIR_PAUSED",
+    "description": "The specified printer or disk device has been paused."
+  },
+  {
+    "code": "80",
+    "name": "ERROR_FILE_EXISTS",
+    "description": "The file exists."
+  },
+  {
+    "code": "82",
+    "name": "ERROR_CANNOT_MAKE",
+    "description": "The directory or file cannot be created."
+  },
+  {
+    "code": "83",
+    "name": "ERROR_FAIL_I24",
+    "description": "Fail on INT 24."
+  },
+  {
+    "code": "84",
+    "name": "ERROR_OUT_OF_STRUCTURES",
+    "description": "Storage to process this request is not available."
+  },
+  {
+    "code": "85",
+    "name": "ERROR_ALREADY_ASSIGNED",
+    "description": "The local device name is already in use."
+  },
+  {
+    "code": "86",
+    "name": "ERROR_INVALID_PASSWORD",
+    "description": "The specified network password is not correct."
+  },
+  {
+    "code": "87",
+    "name": "ERROR_INVALID_PARAMETER",
+    "description": "The parameter is incorrect."
+  },
+  {
+    "code": "88",
+    "name": "ERROR_NET_WRITE_FAULT",
+    "description": "A write fault occurred on the network."
+  },
+  {
+    "code": "89",
+    "name": "ERROR_NO_PROC_SLOTS",
+    "description": "The system cannot start another process at this time."
+  },
+  {
+    "code": "100",
+    "name": "ERROR_TOO_MANY_SEMAPHORES",
+    "description": "Cannot create another system semaphore."
+  },
+  {
+    "code": "101",
+    "name": "ERROR_EXCL_SEM_ALREADY_OWNED",
+    "description": "The exclusive semaphore is owned by another process."
+  },
+  {
+    "code": "102",
+    "name": "ERROR_SEM_IS_SET",
+    "description": "The semaphore is set and cannot be closed."
+  },
+  {
+    "code": "103",
+    "name": "ERROR_TOO_MANY_SEM_REQUESTS",
+    "description": "The semaphore cannot be set again."
+  },
+  {
+    "code": "104",
+    "name": "ERROR_INVALID_AT_INTERRUPT_TIME",
+    "description": "Cannot request exclusive semaphores at interrupt time."
+  },
+  {
+    "code": "105",
+    "name": "ERROR_SEM_OWNER_DIED",
+    "description": "The previous ownership of this semaphore has ended."
+  },
+  {
+    "code": "106",
+    "name": "ERROR_SEM_USER_LIMIT",
+    "description": "Insert the diskette for drive %1."
+  },
+  {
+    "code": "107",
+    "name": "ERROR_DISK_CHANGE",
+    "description": "The program stopped because an alternate diskette was not inserted."
+  },
+  {
+    "code": "108",
+    "name": "ERROR_DRIVE_LOCKED",
+    "description": "The disk is in use or locked by another process."
+  },
+  {
+    "code": "109",
+    "name": "ERROR_BROKEN_PIPE",
+    "description": "The pipe has been ended."
+  },
+  {
+    "code": "110",
+    "name": "ERROR_OPEN_FAILED",
+    "description": "The system cannot open the device or file specified."
+  },
+  {
+    "code": "111",
+    "name": "ERROR_BUFFER_OVERFLOW",
+    "description": "The file name is too long."
+  },
+  {
+    "code": "112",
+    "name": "ERROR_DISK_FULL",
+    "description": "There is not enough space on the disk."
+  },
+  {
+    "code": "113",
+    "name": "ERROR_NO_MORE_SEARCH_HANDLES",
+    "description": "No more internal file identifiers available."
+  },
+  {
+    "code": "114",
+    "name": "ERROR_INVALID_TARGET_HANDLE",
+    "description": "The target internal file identifier is incorrect."
+  },
+  {
+    "code": "117",
+    "name": "ERROR_INVALID_CATEGORY",
+    "description": "The IOCTL call made by the application program is not correct."
+  },
+  {
+    "code": "118",
+    "name": "ERROR_INVALID_VERIFY_SWITCH",
+    "description": "The verify-on-write switch parameter value is not correct."
+  },
+  {
+    "code": "119",
+    "name": "ERROR_BAD_DRIVER_LEVEL",
+    "description": "The system does not support the command requested."
+  },
+  {
+    "code": "120",
+    "name": "ERROR_CALL_NOT_IMPLEMENTED",
+    "description": "This function is not supported on this system."
+  },
+  {
+    "code": "121",
+    "name": "ERROR_SEM_TIMEOUT",
+    "description": "The semaphore timeout period has expired."
+  },
+  {
+    "code": "122",
+    "name": "ERROR_INSUFFICIENT_BUFFER",
+    "description": "The data area passed to a system call is too small."
+  },
+  {
+    "code": "123",
+    "name": "ERROR_INVALID_NAME",
+    "description": "The filename, directory name, or volume label syntax is incorrect."
+  },
+  {
+    "code": "124",
+    "name": "ERROR_INVALID_LEVEL",
+    "description": "The system call level is not correct."
+  },
+  {
+    "code": "125",
+    "name": "ERROR_NO_VOLUME_LABEL",
+    "description": "The disk has no volume label."
+  },
+  {
+    "code": "126",
+    "name": "ERROR_MOD_NOT_FOUND",
+    "description": "The specified module could not be found."
+  },
+  {
+    "code": "127",
+    "name": "ERROR_PROC_NOT_FOUND",
+    "description": "The specified procedure could not be found."
+  },
+  {
+    "code": "128",
+    "name": "ERROR_WAIT_NO_CHILDREN",
+    "description": "There are no child processes to wait for."
+  },
+  {
+    "code": "129",
+    "name": "ERROR_CHILD_NOT_COMPLETE",
+    "description": "The %1 application cannot be run in Win32 mode."
+  },
+  {
+    "code": "130",
+    "name": "ERROR_DIRECT_ACCESS_HANDLE",
+    "description": "Attempt to use a file handle to an open disk partition for an operation other than raw disk I/O."
+  },
+  {
+    "code": "131",
+    "name": "ERROR_NEGATIVE_SEEK",
+    "description": "An attempt was made to move the file pointer before the beginning of the file."
+  },
+  {
+    "code": "132",
+    "name": "ERROR_SEEK_ON_DEVICE",
+    "description": "The file pointer cannot be set on the specified device or file."
+  },
+  {
+    "code": "133",
+    "name": "ERROR_IS_JOIN_TARGET",
+    "description": "A JOIN or SUBST command cannot be used for a drive that contains previously joined drives."
+  },
+  {
+    "code": "134",
+    "name": "ERROR_IS_JOINED",
+    "description": "An attempt was made to use a JOIN or SUBST command on a drive that has already been joined."
+  },
+  {
+    "code": "135",
+    "name": "ERROR_IS_SUBSTED",
+    "description": "An attempt was made to use a JOIN or SUBST command on a drive that has already been substituted."
+  },
+  {
+    "code": "136",
+    "name": "ERROR_NOT_JOINED",
+    "description": "The system tried to delete the JOIN of a drive that is not joined."
+  },
+  {
+    "code": "137",
+    "name": "ERROR_NOT_SUBSTED",
+    "description": "The system tried to delete the substitution of a drive that is not substituted."
+  },
+  {
+    "code": "138",
+    "name": "ERROR_JOIN_TO_JOIN",
+    "description": "The system tried to join a drive to a directory on a joined drive."
+  },
+  {
+    "code": "139",
+    "name": "ERROR_SUBST_TO_SUBST",
+    "description": "The system tried to substitute a drive to a directory on a substituted drive."
+  },
+  {
+    "code": "140",
+    "name": "ERROR_JOIN_TO_SUBST",
+    "description": "The system tried to join a drive to a directory on a substituted drive."
+  },
+  {
+    "code": "141",
+    "name": "ERROR_SUBST_TO_JOIN",
+    "description": "The system tried to SUBST a drive to a directory on a joined drive."
+  },
+  {
+    "code": "142",
+    "name": "ERROR_BUSY_DRIVE",
+    "description": "The system cannot perform a JOIN or SUBST at this time."
+  },
+  {
+    "code": "143",
+    "name": "ERROR_SAME_DRIVE",
+    "description": "The system cannot join or substitute a drive to or for a directory on the same drive."
+  },
+  {
+    "code": "144",
+    "name": "ERROR_DIR_NOT_ROOT",
+    "description": "The directory is not a subdirectory of the root directory."
+  },
+  {
+    "code": "145",
+    "name": "ERROR_DIR_NOT_EMPTY",
+    "description": "The directory is not empty."
+  },
+  {
+    "code": "146",
+    "name": "ERROR_IS_SUBST_PATH",
+    "description": "The path specified is being used in a substitute."
+  },
+  {
+    "code": "147",
+    "name": "ERROR_IS_JOIN_PATH",
+    "description": "Not enough resources are available to process this command."
+  },
+  {
+    "code": "148",
+    "name": "ERROR_PATH_BUSY",
+    "description": "The path specified cannot be used at this time."
+  },
+  {
+    "code": "149",
+    "name": "ERROR_IS_SUBST_TARGET",
+    "description": "An attempt was made to join or substitute a drive for which a directory on the drive is the target of a previous substitute."
+  },
+  {
+    "code": "150",
+    "name": "ERROR_SYSTEM_TRACE",
+    "description": "System trace information was not specified in your CONFIG.SYS file, or tracing is disallowed."
+  },
+  {
+    "code": "151",
+    "name": "ERROR_INVALID_EVENT_COUNT",
+    "description": "The number of specified semaphore events for DosMuxSemWait is not correct."
+  },
+  {
+    "code": "152",
+    "name": "ERROR_TOO_MANY_MUXWAITERS",
+    "description": "DosMuxSemWait did not execute; too many semaphores are already set."
+  },
+  {
+    "code": "153",
+    "name": "ERROR_INVALID_LIST_FORMAT",
+    "description": "The DosMuxSemWait list is not correct."
+  },
+  {
+    "code": "154",
+    "name": "ERROR_LABEL_TOO_LONG",
+    "description": "The volume label you entered exceeds the label character limit of the target file system."
+  },
+  {
+    "code": "155",
+    "name": "ERROR_TOO_MANY_TCBS",
+    "description": "Cannot create another thread."
+  },
+  {
+    "code": "156",
+    "name": "ERROR_SIGNAL_REFUSED",
+    "description": "The recipient process has refused the signal."
+  },
+  {
+    "code": "157",
+    "name": "ERROR_DISCARDED",
+    "description": "The segment is already discarded and cannot be locked."
+  },
+  {
+    "code": "158",
+    "name": "ERROR_NOT_LOCKED",
+    "description": "The segment is already unlocked."
+  },
+  {
+    "code": "159",
+    "name": "ERROR_BAD_THREADID_ADDR",
+    "description": "The address for the thread ID is not correct."
+  },
+  {
+    "code": "160",
+    "name": "ERROR_BAD_ARGUMENTS",
+    "description": "One or more arguments are not correct."
+  },
+  {
+    "code": "161",
+    "name": "ERROR_BAD_PATHNAME",
+    "description": "The specified path is invalid."
+  },
+  {
+    "code": "162",
+    "name": "ERROR_SIGNAL_PENDING",
+    "description": "A signal is already pending."
+  },
+  {
+    "code": "164",
+    "name": "ERROR_MAX_THRDS_REACHED",
+    "description": "No more threads can be created in the system."
+  },
+  {
+    "code": "167",
+    "name": "ERROR_LOCK_FAILED",
+    "description": "Unable to lock a region of a file."
+  },
+  {
+    "code": "170",
+    "name": "ERROR_BUSY",
+    "description": "The requested resource is in use."
+  },
+  {
+    "code": "171",
+    "name": "ERROR_DEVICE_SUPPORT_IN_PROGRESS",
+    "description": "Device's command support detection is in progress."
+  },
+  {
+    "code": "173",
+    "name": "ERROR_CANCEL_VIOLATION",
+    "description": "A lock request was not outstanding for the supplied cancel region."
+  },
+  {
+    "code": "174",
+    "name": "ERROR_ATOMIC_LOCKS_NOT_SUPPORTED",
+    "description": "The file system does not support atomic changes to the lock type."
+  },
+  {
+    "code": "180",
+    "name": "ERROR_INVALID_SEGMENT_NUMBER",
+    "description": "The system detected a segment number that was not correct."
+  },
+  {
+    "code": "182",
+    "name": "ERROR_INVALID_ORDINAL",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "183",
+    "name": "ERROR_ALREADY_EXISTS",
+    "description": "Cannot create a file when that file already exists."
+  },
+  {
+    "code": "186",
+    "name": "ERROR_INVALID_FLAG_NUMBER",
+    "description": "The flag passed is not correct."
+  },
+  {
+    "code": "187",
+    "name": "ERROR_SEM_NOT_FOUND",
+    "description": "The specified system semaphore name was not found."
+  },
+  {
+    "code": "188",
+    "name": "ERROR_INVALID_STARTING_CODESEG",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "189",
+    "name": "ERROR_INVALID_STACKSEG",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "190",
+    "name": "ERROR_INVALID_MODULETYPE",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "191",
+    "name": "ERROR_INVALID_EXE_SIGNATURE",
+    "description": "Cannot run %1 in Win32 mode."
+  },
+  {
+    "code": "192",
+    "name": "ERROR_EXE_MARKED_INVALID",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "193",
+    "name": "ERROR_BAD_EXE_FORMAT",
+    "description": "%1 is not a valid Win32 application."
+  },
+  {
+    "code": "194",
+    "name": "ERROR_ITERATED_DATA_EXCEEDS_64k",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "195",
+    "name": "ERROR_INVALID_MINALLOCSIZE",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "196",
+    "name": "ERROR_DYNLINK_FROM_INVALID_RING",
+    "description": "The operating system cannot run this application program."
+  },
+  {
+    "code": "197",
+    "name": "ERROR_IOPL_NOT_ENABLED",
+    "description": "The operating system is not presently configured to run this application."
+  },
+  {
+    "code": "198",
+    "name": "ERROR_INVALID_SEGDPL",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "199",
+    "name": "ERROR_AUTODATASEG_EXCEEDS_64k",
+    "description": "The operating system cannot run this application program."
+  },
+  {
+    "code": "200",
+    "name": "ERROR_RING2SEG_MUST_BE_MOVABLE",
+    "description": "The code segment cannot be greater than or equal to 64K."
+  },
+  {
+    "code": "201",
+    "name": "ERROR_RELOC_CHAIN_XEEDS_SEGLIM",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "202",
+    "name": "ERROR_INFLOOP_IN_RELOC_CHAIN",
+    "description": "The operating system cannot run %1."
+  },
+  {
+    "code": "203",
+    "name": "ERROR_ENVVAR_NOT_FOUND",
+    "description": "The system could not find the environment option that was entered."
+  },
+  {
+    "code": "205",
+    "name": "ERROR_NO_SIGNAL_SENT",
+    "description": "No process in the command subtree has a signal handler."
+  },
+  {
+    "code": "206",
+    "name": "ERROR_FILENAME_EXCED_RANGE",
+    "description": "The filename or extension is too long."
+  },
+  {
+    "code": "207",
+    "name": "ERROR_RING2_STACK_IN_USE",
+    "description": "The ring 2 stack is in use."
+  },
+  {
+    "code": "208",
+    "name": "ERROR_META_EXPANSION_TOO_LONG",
+    "description": "The global filename characters, * or ?, are entered incorrectly or too many global filename characters are specified."
+  },
+  {
+    "code": "209",
+    "name": "ERROR_INVALID_SIGNAL_NUMBER",
+    "description": "The signal being posted is not correct."
+  },
+  {
+    "code": "210",
+    "name": "ERROR_THREAD_1_INACTIVE",
+    "description": "The signal handler cannot be set."
+  },
+  {
+    "code": "212",
+    "name": "ERROR_LOCKED",
+    "description": "The segment is locked and cannot be reallocated."
+  },
+  {
+    "code": "214",
+    "name": "ERROR_TOO_MANY_MODULES",
+    "description": "Too many dynamic-link modules are attached to this program or dynamic-link module."
+  },
+  {
+    "code": "215",
+    "name": "ERROR_NESTING_NOT_ALLOWED",
+    "description": "Cannot nest calls to LoadModule."
+  },
+  {
+    "code": "216",
+    "name": "ERROR_EXE_MACHINE_TYPE_MISMATCH",
+    "description": "This version of %1 is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher."
+  },
+  {
+    "code": "217",
+    "name": "ERROR_EXE_CANNOT_MODIFY_SIGNED_BINARY",
+    "description": "The image file %1 is signed, unable to modify."
+  },
+  {
+    "code": "218",
+    "name": "ERROR_EXE_CANNOT_MODIFY_STRONG_SIGNED_BINARY",
+    "description": "The image file %1 is strong signed, unable to modify."
+  },
+  {
+    "code": "220",
+    "name": "ERROR_FILE_CHECKED_OUT",
+    "description": "This file is checked out or locked for editing by another user."
+  },
+  {
+    "code": "221",
+    "name": "ERROR_CHECKOUT_REQUIRED",
+    "description": "The file must be checked out before saving changes."
+  },
+  {
+    "code": "222",
+    "name": "ERROR_BAD_FILE_TYPE",
+    "description": "The file type being saved or retrieved has been blocked."
+  },
+  {
+    "code": "223",
+    "name": "ERROR_FILE_TOO_LARGE",
+    "description": "The file size exceeds the limit allowed and cannot be saved."
+  },
+  {
+    "code": "224",
+    "name": "ERROR_FORMS_AUTH_REQUIRED",
+    "description": "Access Denied. Before opening files in this location, you must first add the web site to your trusted sites list, browse to the web site, and select the option to login automatically."
+  },
+  {
+    "code": "225",
+    "name": "ERROR_VIRUS_INFECTED",
+    "description": "Operation did not complete successfully because the file contains a virus or potentially unwanted software."
+  },
+  {
+    "code": "226",
+    "name": "ERROR_VIRUS_DELETED",
+    "description": "This file contains a virus or potentially unwanted software and cannot be opened. Due to the nature of this virus or potentially unwanted software, the file has been removed from this location."
+  },
+  {
+    "code": "229",
+    "name": "ERROR_PIPE_LOCAL",
+    "description": "The pipe is local."
+  },
+  {
+    "code": "230",
+    "name": "ERROR_BAD_PIPE",
+    "description": "The pipe state is invalid."
+  },
+  {
+    "code": "231",
+    "name": "ERROR_PIPE_BUSY",
+    "description": "All pipe instances are busy."
+  },
+  {
+    "code": "232",
+    "name": "ERROR_NO_DATA",
+    "description": "The pipe is being closed."
+  },
+  {
+    "code": "233",
+    "name": "ERROR_PIPE_NOT_CONNECTED",
+    "description": "No process is on the other end of the pipe."
+  },
+  {
+    "code": "234",
+    "name": "ERROR_MORE_DATA",
+    "description": "More data is available."
+  },
+  {
+    "code": "240",
+    "name": "ERROR_VC_DISCONNECTED",
+    "description": "The session was canceled."
+  },
+  {
+    "code": "254",
+    "name": "ERROR_INVALID_EA_NAME",
+    "description": "The specified extended attribute name was invalid."
+  },
+  {
+    "code": "255",
+    "name": "ERROR_EA_LIST_INCONSISTENT",
+    "description": "The extended attributes are inconsistent."
+  },
+  {
+    "code": "258",
+    "name": "WAIT_TIMEOUT",
+    "description": "The wait operation timed out."
+  },
+  {
+    "code": "259",
+    "name": "ERROR_NO_MORE_ITEMS",
+    "description": "No more data is available."
+  },
+  {
+    "code": "266",
+    "name": "ERROR_CANNOT_COPY",
+    "description": "The copy functions cannot be used."
+  },
+  {
+    "code": "267",
+    "name": "ERROR_DIRECTORY",
+    "description": "The directory name is invalid."
+  },
+  {
+    "code": "275",
+    "name": "ERROR_EAS_DIDNT_FIT",
+    "description": "The extended attributes did not fit in the buffer."
+  },
+  {
+    "code": "276",
+    "name": "ERROR_EA_FILE_CORRUPT",
+    "description": "The extended attribute file on the mounted file system is corrupt."
+  },
+  {
+    "code": "277",
+    "name": "ERROR_EA_TABLE_FULL",
+    "description": "The extended attribute table file is full."
+  },
+  {
+    "code": "278",
+    "name": "ERROR_INVALID_EA_HANDLE",
+    "description": "The specified extended attribute handle is invalid."
+  },
+  {
+    "code": "282",
+    "name": "ERROR_EAS_NOT_SUPPORTED",
+    "description": "The mounted file system does not support extended attributes."
+  },
+  {
+    "code": "288",
+    "name": "ERROR_NOT_OWNER",
+    "description": "Attempt to release mutex not owned by caller."
+  },
+  {
+    "code": "298",
+    "name": "ERROR_TOO_MANY_POSTS",
+    "description": "Too many posts were made to a semaphore."
+  },
+  {
+    "code": "299",
+    "name": "ERROR_PARTIAL_COPY",
+    "description": "Only part of a ReadProcessMemory or WriteProcessMemory request was completed."
+  },
+  {
+    "code": "300",
+    "name": "ERROR_OPLOCK_NOT_GRANTED",
+    "description": "The oplock request is denied."
+  },
+  {
+    "code": "301",
+    "name": "ERROR_INVALID_OPLOCK_PROTOCOL",
+    "description": "An invalid oplock acknowledgment was received by the system."
+  },
+  {
+    "code": "302",
+    "name": "ERROR_DISK_TOO_FRAGMENTED",
+    "description": "The volume is too fragmented to complete this operation."
+  },
+  {
+    "code": "303",
+    "name": "ERROR_DELETE_PENDING",
+    "description": "The file cannot be opened because it is in the process of being deleted."
+  },
+  {
+    "code": "304",
+    "name": "ERROR_INCOMPATIBLE_WITH_GLOBAL_SHORT_NAME_REGISTRY_SETTING",
+    "description": "Short name settings may not be changed on this volume due to the global registry setting."
+  },
+  {
+    "code": "305",
+    "name": "ERROR_SHORT_NAMES_NOT_ENABLED_ON_VOLUME",
+    "description": "Short names are not enabled on this volume."
+  },
+  {
+    "code": "306",
+    "name": "ERROR_SECURITY_STREAM_IS_INCONSISTENT",
+    "description": "The security stream for the given volume is in an inconsistent state. Please run CHKDSK on the volume."
+  },
+  {
+    "code": "307",
+    "name": "ERROR_INVALID_LOCK_RANGE",
+    "description": "A requested file lock operation cannot be processed due to an invalid byte range."
+  },
+  {
+    "code": "308",
+    "name": "ERROR_IMAGE_SUBSYSTEM_NOT_PRESENT",
+    "description": "The subsystem needed to support the image type is not present."
+  },
+  {
+    "code": "309",
+    "name": "ERROR_NOTIFICATION_GUID_ALREADY_DEFINED",
+    "description": "The specified file already has a notification GUID associated with it."
+  },
+  {
+    "code": "310",
+    "name": "ERROR_INVALID_EXCEPTION_HANDLER",
+    "description": "An invalid exception handler routine has been detected."
+  },
+  {
+    "code": "311",
+    "name": "ERROR_DUPLICATE_PRIVILEGES",
+    "description": "Duplicate privileges were specified for the token."
+  },
+  {
+    "code": "312",
+    "name": "ERROR_NO_RANGES_PROCESSED",
+    "description": "No ranges for the specified operation were able to be processed."
+  },
+  {
+    "code": "313",
+    "name": "ERROR_NOT_ALLOWED_ON_SYSTEM_FILE",
+    "description": "Operation is not allowed on a file system internal file."
+  },
+  {
+    "code": "314",
+    "name": "ERROR_DISK_RESOURCES_EXHAUSTED",
+    "description": "The physical resources of this disk have been exhausted."
+  },
+  {
+    "code": "315",
+    "name": "ERROR_INVALID_TOKEN",
+    "description": "The token representing the data is invalid."
+  },
+  {
+    "code": "316",
+    "name": "ERROR_DEVICE_FEATURE_NOT_SUPPORTED",
+    "description": "The device does not support the command feature."
+  },
+  {
+    "code": "317",
+    "name": "ERROR_MR_MID_NOT_FOUND",
+    "description": "The system cannot find message text for message number 0x%1 in the message file for %2."
+  },
+  {
+    "code": "318",
+    "name": "ERROR_SCOPE_NOT_FOUND",
+    "description": "The scope specified was not found."
+  },
+  {
+    "code": "319",
+    "name": "ERROR_UNDEFINED_SCOPE",
+    "description": "The Central Access Policy specified is not defined on the target machine."
+  },
+  {
+    "code": "320",
+    "name": "ERROR_INVALID_CAP",
+    "description": "The Central Access Policy obtained from Active Directory is invalid."
+  },
+  {
+    "code": "321",
+    "name": "ERROR_DEVICE_UNREACHABLE",
+    "description": "The device is unreachable."
+  },
+  {
+    "code": "322",
+    "name": "ERROR_DEVICE_NO_RESOURCES",
+    "description": "The target device has insufficient resources to complete the operation."
+  },
+  {
+    "code": "323",
+    "name": "ERROR_DATA_CHECKSUM_ERROR",
+    "description": "A data integrity checksum error occurred. Data in the file stream is corrupt."
+  },
+  {
+    "code": "324",
+    "name": "ERROR_INTERMIXED_KERNEL_EA_OPERATION",
+    "description": "An attempt was made to modify both a KERNEL and normal Extended Attribute (EA) in the same operation."
+  },
+  {
+    "code": "326",
+    "name": "ERROR_FILE_LEVEL_TRIM_NOT_SUPPORTED",
+    "description": "Device does not support file-level TRIM."
+  },
+  {
+    "code": "327",
+    "name": "ERROR_OFFSET_ALIGNMENT_VIOLATION",
+    "description": "The command specified a data offset that does not align to the device's granularity/alignment."
+  },
+  {
+    "code": "328",
+    "name": "ERROR_INVALID_FIELD_IN_PARAMETER_LIST",
+    "description": "The command specified an invalid field in its parameter list."
+  },
+  {
+    "code": "329",
+    "name": "ERROR_OPERATION_IN_PROGRESS",
+    "description": "An operation is currently in progress with the device."
+  },
+  {
+    "code": "330",
+    "name": "ERROR_BAD_DEVICE_PATH",
+    "description": "An attempt was made to send down the command via an invalid path to the target device."
+  },
+  {
+    "code": "331",
+    "name": "ERROR_TOO_MANY_DESCRIPTORS",
+    "description": "The command specified a number of descriptors that exceeded the maximum supported by the device."
+  },
+  {
+    "code": "332",
+    "name": "ERROR_SCRUB_DATA_DISABLED",
+    "description": "Scrub is disabled on the specified file."
+  },
+  {
+    "code": "333",
+    "name": "ERROR_NOT_REDUNDANT_STORAGE",
+    "description": "The storage device does not provide redundancy."
+  },
+  {
+    "code": "334",
+    "name": "ERROR_RESIDENT_FILE_NOT_SUPPORTED",
+    "description": "An operation is not supported on a resident file."
+  },
+  {
+    "code": "335",
+    "name": "ERROR_COMPRESSED_FILE_NOT_SUPPORTED",
+    "description": "An operation is not supported on a compressed file."
+  },
+  {
+    "code": "336",
+    "name": "ERROR_DIRECTORY_NOT_SUPPORTED",
+    "description": "An operation is not supported on a directory."
+  },
+  {
+    "code": "337",
+    "name": "ERROR_NOT_READ_FROM_COPY",
+    "description": "The specified copy of the requested data could not be read."
+  },
+  {
+    "code": "350",
+    "name": "ERROR_FAIL_NOACTION_REBOOT",
+    "description": "No action was taken as a system reboot is required."
+  },
+  {
+    "code": "351",
+    "name": "ERROR_FAIL_SHUTDOWN",
+    "description": "The shutdown operation failed."
+  },
+  {
+    "code": "352",
+    "name": "ERROR_FAIL_RESTART",
+    "description": "The restart operation failed."
+  },
+  {
+    "code": "353",
+    "name": "ERROR_MAX_SESSIONS_REACHED",
+    "description": "The maximum number of sessions has been reached."
+  },
+  {
+    "code": "400",
+    "name": "ERROR_THREAD_MODE_ALREADY_BACKGROUND",
+    "description": "The thread is already in background processing mode."
+  },
+  {
+    "code": "401",
+    "name": "ERROR_THREAD_MODE_NOT_BACKGROUND",
+    "description": "The thread is not in background processing mode."
+  },
+  {
+    "code": "402",
+    "name": "ERROR_PROCESS_MODE_ALREADY_BACKGROUND",
+    "description": "The process is already in background processing mode."
+  },
+  {
+    "code": "403",
+    "name": "ERROR_PROCESS_MODE_NOT_BACKGROUND",
+    "description": "The process is not in background processing mode."
+  },
+  {
+    "code": "487",
+    "name": "ERROR_INVALID_ADDRESS",
+    "description": "Attempt to access invalid address."
+  },
+  {
+    "code": "547",
+    "name": "ERROR_INVALID_QUOTA_LOWER",
+    "description": "An attempt was made to lower a quota limit below the current usage."
+  },
+  {
+    "code": "567",
+    "name": "ERROR_PAGEFILE_QUOTA_EXCEEDED",
+    "description": "Page file quota was exceeded."
+  },
+  {
+    "code": "568",
+    "name": "ERROR_LOGON_SERVER_CONFLICT",
+    "description": "The Netlogon service cannot start because another Netlogon service running in the domain conflicts with the specified role."
+  },
+  {
+    "code": "569",
+    "name": "ERROR_SYNCHRONIZATION_REQUIRED",
+    "description": "The SAM database on a Windows Server is significantly out of synchronization with the copy on the Domain Controller. A complete synchronization is required."
+  },
+  {
+    "code": "571",
+    "name": "ERROR_IO_PRIVILEGE_FAILED",
+    "description": "{Privilege Failed} The I/O permissions for the process could not be changed."
+  },
+  {
+    "code": "577",
+    "name": "ERROR_INVALID_IMAGE_HASH",
+    "description": "Windows cannot verify the digital signature for this file. A recent hardware or software change might have installed a file that is signed incorrectly or damaged, or that might be malicious software from an unknown source."
+  },
+  {
+    "code": "581",
+    "name": "ERROR_DOMAIN_CTRLR_CONFIG_ERROR",
+    "description": "A Windows Server has an incorrect configuration."
+  },
+  {
+    "code": "583",
+    "name": "ERROR_UNDEFINED_CHARACTER",
+    "description": "The Unicode character is not defined in the Unicode character set installed on the system."
+  },
+  {
+    "code": "586",
+    "name": "ERROR_BACKUP_CONTROLLER",
+    "description": "This operation is only allowed for the Primary Domain Controller of the domain."
+  },
+  {
+    "code": "594",
+    "name": "ERROR_DRIVER_CANCEL_TIMEOUT",
+    "description": "{Cancel Timeout} The driver %hs failed to complete a cancelled I/O request in the allotted time."
+  },
+  {
+    "code": "596",
+    "name": "ERROR_LOST_WRITEBEHIND_DATA",
+    "description": "{Delayed Write Failed} Windows was unable to save all the data for the file %hs. The data has been lost. This error may be caused by a failure of your computer hardware or network connection. Please try to save this file elsewhere."
+  },
+  {
+    "code": "597",
+    "name": "ERROR_CLIENT_SERVER_PARAMETERS_INVALID",
+    "description": "The parameter(s) passed to the server in the client/server shared memory window were invalid. Too much data may have been put in the shared memory window."
+  },
+  {
+    "code": "608",
+    "name": "ERROR_INSUFFICIENT_LOGON_INFO",
+    "description": "There is insufficient account information to log you on."
+  },
+  {
+    "code": "610",
+    "name": "ERROR_BAD_SERVICE_ENTRYPOINT",
+    "description": "{Invalid Service Callback Entrypoint} The %hs service is not written correctly. The stack pointer has been left in an inconsistent state. The callback entrypoint should be declared as WINAPI or STDCALL. Selecting OK will cause the service to continue operation. However, the service process may operate incorrectly."
+  },
+  {
+    "code": "611",
+    "name": "ERROR_IP_ADDRESS_CONFLICT1",
+    "description": "There is an IP address conflict with another system on the network."
+  },
+  {
+    "code": "612",
+    "name": "ERROR_IP_ADDRESS_CONFLICT2",
+    "description": "There is an IP address conflict with another system on the network."
+  },
+  {
+    "code": "613",
+    "name": "ERROR_REGISTRY_QUOTA_LIMIT",
+    "description": "{Low On Registry Space} The system has reached the maximum size allowed for the system part of the registry. Additional storage requests will be ignored."
+  },
+  {
+    "code": "614",
+    "name": "ERROR_NO_CALLBACK_ACTIVE",
+    "description": "A callback return system service cannot be executed when no callback is active."
+  },
+  {
+    "code": "615",
+    "name": "ERROR_PWD_TOO_SHORT",
+    "description": "The password provided is too short to meet the policy of your user account. Please choose a longer password."
+  },
+  {
+    "code": "616",
+    "name": "ERROR_PWD_TOO_RECENT",
+    "description": "The policy of your user account does not allow you to change passwords too frequently. This is done to prevent users from changing back to a familiar, but potentially discovered, password. If you feel your password has been compromised then please contact your administrator immediately to have a new one assigned."
+  },
+  {
+    "code": "617",
+    "name": "ERROR_PWD_HISTORY_CONFLICT",
+    "description": "You have attempted to change your password to one that you have used in the past. The policy of your user account does not allow this. Please select a password that you have not previously used."
+  },
+  {
+    "code": "621",
+    "name": "ERROR_QUOTA_LIST_INCONSISTENT",
+    "description": "The specified quota list is internally inconsistent with its descriptor."
+  },
+  {
+    "code": "622",
+    "name": "ERROR_EVALUATION_EXPIRATION",
+    "description": "{Windows Evaluation Notification} The evaluation period for this installation of Windows has expired. This system will shutdown in 1 hour. To restore access to this installation of Windows, please upgrade this installation using a licensed distribution of this product."
+  },
+  {
+    "code": "643",
+    "name": "ERROR_DS_VERSION_CHECK_FAILURE",
+    "description": "This version of Windows is not compatible with the behavior version of directory forest, domain or domain controller."
+  },
+  {
+    "code": "648",
+    "name": "ERROR_DEVICE_ENUMERATION_ERROR",
+    "description": "The \"%hs\" encountered an error while applying power or reading the device configuration. This may be caused by a failure of your hardware or by a poor connection."
+  },
+  {
+    "code": "655",
+    "name": "ERROR_VOLSNAP_PREPARE_HIBERNATE",
+    "description": "{Volume Shadow Copy Service} Please wait while the Volume Shadow Copy Service prepares volume %hs for hibernation."
+  },
+  {
+    "code": "656",
+    "name": "ERROR_HIBERNATION_FAILURE",
+    "description": "The system has failed to hibernate (The error code is %hs). Hibernation will be disabled until the system is restarted."
+  },
+  {
+    "code": "657",
+    "name": "ERROR_PWD_TOO_LONG",
+    "description": "The password provided is too long to meet the policy of your user account. Please choose a shorter password."
+  },
+  {
+    "code": "704",
+    "name": "ERROR_FT_READ_RECOVERY_FROM_BACKUP",
+    "description": "{Redundant Read} To satisfy a read request, the NT fault-tolerant file system successfully read the requested data from a redundant copy. This was done because the file system encountered a failure on a member of the fault-tolerant volume, but was unable to reassign the failing area of the device."
+  },
+  {
+    "code": "707",
+    "name": "ERROR_RECEIVE_PARTIAL",
+    "description": "{Partial Data Received} The network transport returned partial data to its client. The remaining data will be sent later."
+  },
+  {
+    "code": "708",
+    "name": "ERROR_RECEIVE_EXPEDITED",
+    "description": "{Expedited Data Received} The network transport returned data to its client that was marked as expedited by the remote system."
+  },
+  {
+    "code": "709",
+    "name": "ERROR_RECEIVE_PARTIAL_EXPEDITED",
+    "description": "{Partial Expedited Data Received} The network transport returned partial data to its client and this data was marked as expedited by the remote system. The remaining data will be sent later."
+  },
+  {
+    "code": "716",
+    "name": "ERROR_SERVICE_NOTIFICATION",
+    "description": "%hs"
+  },
+  {
+    "code": "740",
+    "name": "ERROR_ELEVATION_REQUIRED",
+    "description": "The requested operation requires elevation."
+  },
+  {
+    "code": "746",
+    "name": "ERROR_PRIMARY_TRANSPORT_CONNECT_FAILED",
+    "description": "{Connect Failure on Primary Transport} An attempt was made to connect to the remote server %hs on the primary transport, but the connection failed. The computer WAS able to connect on a secondary transport."
+  },
+  {
+    "code": "761",
+    "name": "ERROR_VOLSNAP_HIBERNATE_READY",
+    "description": "{Volume Shadow Copy Service} The system is now ready for hibernation."
+  },
+  {
+    "code": "769",
+    "name": "ERROR_COMPRESSION_DISABLED",
+    "description": "Compression is disabled for this volume."
+  },
+  {
+    "code": "780",
+    "name": "ERROR_DISK_REPAIR_DISABLED",
+    "description": "The attempted operation required self healing to be enabled."
+  },
+  {
+    "code": "781",
+    "name": "ERROR_INSUFFICIENT_RESOURCE_FOR_SPECIFIED_SHARED_SECTION_SIZE",
+    "description": "The Desktop heap encountered an error while allocating session memory. There is more information in the system event log."
+  },
+  {
+    "code": "786",
+    "name": "ERROR_ACCESS_DISABLED_NO_SAFER_UI_BY_POLICY",
+    "description": "Access to %1 has been restricted by your Administrator by policy rule %2."
+  },
+  {
+    "code": "788",
+    "name": "ERROR_LOST_WRITEBEHIND_DATA_NETWORK_DISCONNECTED",
+    "description": "{Delayed Write Failed} Windows was unable to save all the data for the file %hs; the data has been lost. This error may be caused by network connectivity issues. Please try to save this file elsewhere."
+  },
+  {
+    "code": "789",
+    "name": "ERROR_LOST_WRITEBEHIND_DATA_NETWORK_SERVER_ERROR",
+    "description": "{Delayed Write Failed} Windows was unable to save all the data for the file %hs; the data has been lost. This error was returned by the server on which the file exists. Please try to save this file elsewhere."
+  },
+  {
+    "code": "1051",
+    "name": "ERROR_DEPENDENT_SERVICES_RUNNING",
+    "description": "A stop control has been sent to a service that other running services are dependent on."
+  },
+  {
+    "code": "1052",
+    "name": "ERROR_INVALID_SERVICE_CONTROL",
+    "description": "The requested control is not valid for this service."
+  },
+  {
+    "code": "1053",
+    "name": "ERROR_SERVICE_REQUEST_TIMEOUT",
+    "description": "The service did not respond to the start or control request in a timely fashion."
+  },
+  {
+    "code": "1054",
+    "name": "ERROR_SERVICE_NO_THREAD",
+    "description": "A thread could not be created for the service."
+  },
+  {
+    "code": "1055",
+    "name": "ERROR_SERVICE_DATABASE_LOCKED",
+    "description": "The service database is locked."
+  },
+  {
+    "code": "1056",
+    "name": "ERROR_SERVICE_ALREADY_RUNNING",
+    "description": "An instance of the service is already running."
+  },
+  {
+    "code": "1057",
+    "name": "ERROR_INVALID_SERVICE_ACCOUNT",
+    "description": "The account name is invalid or does not exist, or the password is invalid for the account name specified."
+  },
+  {
+    "code": "1058",
+    "name": "ERROR_SERVICE_DISABLED",
+    "description": "The service cannot be started, either because it is disabled or because it has no enabled devices associated with it."
+  },
+  {
+    "code": "1059",
+    "name": "ERROR_CIRCULAR_DEPENDENCY",
+    "description": "Circular service dependency was specified."
+  },
+  {
+    "code": "1060",
+    "name": "ERROR_SERVICE_DOES_NOT_EXIST",
+    "description": "The specified service does not exist as an installed service."
+  },
+  {
+    "code": "1061",
+    "name": "ERROR_SERVICE_CANNOT_ACCEPT_CTRL",
+    "description": "The service cannot accept control messages at this time."
+  },
+  {
+    "code": "1062",
+    "name": "ERROR_SERVICE_NOT_ACTIVE",
+    "description": "The service has not been started."
+  },
+  {
+    "code": "1063",
+    "name": "ERROR_FAILED_SERVICE_CONTROLLER_CONNECT",
+    "description": "The service process could not connect to the service controller."
+  },
+  {
+    "code": "1064",
+    "name": "ERROR_EXCEPTION_IN_SERVICE",
+    "description": "An exception occurred in the service when handling the control request."
+  },
+  {
+    "code": "1066",
+    "name": "ERROR_SERVICE_SPECIFIC_ERROR",
+    "description": "The service has returned a service-specific error code."
+  },
+  {
+    "code": "1068",
+    "name": "ERROR_SERVICE_DEPENDENCY_FAIL",
+    "description": "The dependency service or group failed to start."
+  },
+  {
+    "code": "1069",
+    "name": "ERROR_SERVICE_LOGON_FAILED",
+    "description": "The service did not start due to a logon failure."
+  },
+  {
+    "code": "1070",
+    "name": "ERROR_SERVICE_START_HANG",
+    "description": "After starting, the service hung in a start-pending state."
+  },
+  {
+    "code": "1071",
+    "name": "ERROR_INVALID_SERVICE_LOCK",
+    "description": "The specified service database lock is invalid."
+  },
+  {
+    "code": "1072",
+    "name": "ERROR_SERVICE_MARKED_FOR_DELETE",
+    "description": "The specified service has been marked for deletion."
+  },
+  {
+    "code": "1073",
+    "name": "ERROR_SERVICE_EXISTS",
+    "description": "The specified service already exists."
+  },
+  {
+    "code": "1075",
+    "name": "ERROR_SERVICE_DEPENDENCY_DELETED",
+    "description": "The dependency service does not exist or has been marked for deletion."
+  },
+  {
+    "code": "1077",
+    "name": "ERROR_SERVICE_NEVER_STARTED",
+    "description": "No attempts to start the service have been made since the last boot."
+  },
+  {
+    "code": "1078",
+    "name": "ERROR_DUPLICATE_SERVICE_NAME",
+    "description": "The name is already in use as either a service name or a service display name."
+  },
+  {
+    "code": "1079",
+    "name": "ERROR_DIFFERENT_SERVICE_ACCOUNT",
+    "description": "The account specified for this service is different from the account specified for other services running in the same process."
+  },
+  {
+    "code": "1080",
+    "name": "ERROR_CANNOT_DETECT_DRIVER_FAILURE",
+    "description": "Failure actions can only be set for Win32 services, not for drivers."
+  },
+  {
+    "code": "1081",
+    "name": "ERROR_CANNOT_DETECT_PROCESS_ABORT",
+    "description": "This service runs in the same process as the service control manager. Therefore, the service control manager cannot take action if this service's process terminates unexpectedly."
+  },
+  {
+    "code": "1082",
+    "name": "ERROR_NO_RECOVERY_PROGRAM",
+    "description": "No recovery program has been configured for this service."
+  },
+  {
+    "code": "1083",
+    "name": "ERROR_SERVICE_NOT_IN_EXE",
+    "description": "The executable program that this service is configured to run in does not implement the service."
+  },
+  {
+    "code": "1084",
+    "name": "ERROR_NOT_SAFEBOOT_SERVICE",
+    "description": "This service cannot be started in Safe Mode."
+  },
+  {
+    "code": "1121",
+    "name": "ERROR_COUNTER_TIMEOUT",
+    "description": "A serial I/O operation completed because the timeout period expired. The IOCTL_SERIAL_XOFF_COUNTER did not reach zero.)"
+  },
+  {
+    "code": "1172",
+    "name": "ERROR_NO_TRACKING_SERVICE",
+    "description": "The tracking (workstation) service is not running."
+  },
+  {
+    "code": "1177",
+    "name": "ERROR_UNABLE_TO_MOVE_REPLACEMENT_2",
+    "description": "Unable to move the replacement file to the file to be replaced. The file to be replaced has been renamed using the backup name."
+  },
+  {
+    "code": "1201",
+    "name": "ERROR_CONNECTION_UNAVAIL",
+    "description": "The device is not currently connected but it is a remembered connection."
+  },
+  {
+    "code": "1202",
+    "name": "ERROR_DEVICE_ALREADY_REMEMBERED",
+    "description": "The local device name has a remembered connection to another network resource."
+  },
+  {
+    "code": "1203",
+    "name": "ERROR_NO_NET_OR_BAD_PATH",
+    "description": "The network path was either typed incorrectly, does not exist, or the network provider is not currently available. Please try retyping the path or contact your network administrator."
+  },
+  {
+    "code": "1204",
+    "name": "ERROR_BAD_PROVIDER",
+    "description": "The specified network provider name is invalid."
+  },
+  {
+    "code": "1205",
+    "name": "ERROR_CANNOT_OPEN_PROFILE",
+    "description": "Unable to open the network connection profile."
+  },
+  {
+    "code": "1206",
+    "name": "ERROR_BAD_PROFILE",
+    "description": "The network connection profile is corrupted."
+  },
+  {
+    "code": "1212",
+    "name": "ERROR_INVALID_DOMAINNAME",
+    "description": "The format of the specified domain name is invalid."
+  },
+  {
+    "code": "1213",
+    "name": "ERROR_INVALID_SERVICENAME",
+    "description": "The format of the specified service name is invalid."
+  },
+  {
+    "code": "1214",
+    "name": "ERROR_INVALID_NETNAME",
+    "description": "The format of the specified network name is invalid."
+  },
+  {
+    "code": "1215",
+    "name": "ERROR_INVALID_SHARENAME",
+    "description": "The format of the specified share name is invalid."
+  },
+  {
+    "code": "1216",
+    "name": "ERROR_INVALID_PASSWORDNAME",
+    "description": "The format of the specified password is invalid."
+  },
+  {
+    "code": "1219",
+    "name": "ERROR_SESSION_CREDENTIAL_CONFLICT",
+    "description": "Multiple connections to a server or shared resource by the same user, using more than one user name, are not allowed. Disconnect all previous connections to the server or shared resource and try again."
+  },
+  {
+    "code": "1220",
+    "name": "ERROR_REMOTE_SESSION_LIMIT_EXCEEDED",
+    "description": "An attempt was made to establish a session to a network server, but there are already too many sessions established to that server."
+  },
+  {
+    "code": "1221",
+    "name": "ERROR_DUP_DOMAINNAME",
+    "description": "The workgroup or domain name is already in use by another computer on the network."
+  },
+  {
+    "code": "1222",
+    "name": "ERROR_NO_NETWORK",
+    "description": "The network is not present or not started."
+  },
+  {
+    "code": "1225",
+    "name": "ERROR_CONNECTION_REFUSED",
+    "description": "The remote computer refused the network connection."
+  },
+  {
+    "code": "1226",
+    "name": "ERROR_GRACEFUL_DISCONNECT",
+    "description": "The network connection was gracefully closed."
+  },
+  {
+    "code": "1227",
+    "name": "ERROR_ADDRESS_ALREADY_ASSOCIATED",
+    "description": "The network transport endpoint already has an address associated with it."
+  },
+  {
+    "code": "1228",
+    "name": "ERROR_ADDRESS_NOT_ASSOCIATED",
+    "description": "An address has not yet been associated with the network endpoint."
+  },
+  {
+    "code": "1229",
+    "name": "ERROR_CONNECTION_INVALID",
+    "description": "An operation was attempted on a nonexistent network connection."
+  },
+  {
+    "code": "1230",
+    "name": "ERROR_CONNECTION_ACTIVE",
+    "description": "An invalid operation was attempted on an active network connection."
+  },
+  {
+    "code": "1231",
+    "name": "ERROR_NETWORK_UNREACHABLE",
+    "description": "The network location cannot be reached. For information about network troubleshooting, see Windows Help."
+  },
+  {
+    "code": "1232",
+    "name": "ERROR_HOST_UNREACHABLE",
+    "description": "The network location cannot be reached. For information about network troubleshooting, see Windows Help."
+  },
+  {
+    "code": "1233",
+    "name": "ERROR_PROTOCOL_UNREACHABLE",
+    "description": "The network location cannot be reached. For information about network troubleshooting, see Windows Help."
+  },
+  {
+    "code": "1234",
+    "name": "ERROR_PORT_UNREACHABLE",
+    "description": "No service is operating at the destination network endpoint on the remote system."
+  },
+  {
+    "code": "1236",
+    "name": "ERROR_CONNECTION_ABORTED",
+    "description": "The network connection was aborted by the local system."
+  },
+  {
+    "code": "1238",
+    "name": "ERROR_CONNECTION_COUNT_LIMIT",
+    "description": "A connection to the server could not be made because the limit on the number of concurrent connections for this account has been reached."
+  },
+  {
+    "code": "1239",
+    "name": "ERROR_LOGIN_TIME_RESTRICTION",
+    "description": "Attempting to log in during an unauthorized time of day for this account."
+  },
+  {
+    "code": "1240",
+    "name": "ERROR_LOGIN_WKSTA_RESTRICTION",
+    "description": "The account is not authorized to log in from this station."
+  },
+  {
+    "code": "1241",
+    "name": "ERROR_INCORRECT_ADDRESS",
+    "description": "The network address could not be used for the operation requested."
+  },
+  {
+    "code": "1242",
+    "name": "ERROR_ALREADY_REGISTERED",
+    "description": "The service is already registered."
+  },
+  {
+    "code": "1243",
+    "name": "ERROR_SERVICE_NOT_FOUND",
+    "description": "The specified service does not exist."
+  },
+  {
+    "code": "1245",
+    "name": "ERROR_NOT_LOGGED_ON",
+    "description": "The operation being requested was not performed because the user has not logged on to the network. The specified service does not exist."
+  },
+  {
+    "code": "1250",
+    "name": "ERROR_DOMAIN_CONTROLLER_EXISTS",
+    "description": "A domain controller with the specified name already exists."
+  },
+  {
+    "code": "1256",
+    "name": "ERROR_HOST_DOWN",
+    "description": "The remote system is not available. For information about network troubleshooting, see Windows Help."
+  },
+  {
+    "code": "1257",
+    "name": "ERROR_NON_ACCOUNT_SID",
+    "description": "The security identifier provided is not from an account domain."
+  },
+  {
+    "code": "1258",
+    "name": "ERROR_NON_DOMAIN_SID",
+    "description": "The security identifier provided does not have a domain component."
+  },
+  {
+    "code": "1260",
+    "name": "ERROR_ACCESS_DISABLED_BY_POLICY",
+    "description": "This program is blocked by group policy. For more information, contact your system administrator."
+  },
+  {
+    "code": "1262",
+    "name": "ERROR_CSCSHARE_OFFLINE",
+    "description": "The share is currently offline or does not exist."
+  },
+  {
+    "code": "1263",
+    "name": "ERROR_PKINIT_FAILURE",
+    "description": "The Kerberos protocol encountered an error while validating the KDC certificate during smartcard logon. There is more information in the system event log."
+  },
+  {
+    "code": "1265",
+    "name": "ERROR_DOWNGRADE_DETECTED",
+    "description": "The system cannot contact a domain controller to service the authentication request. Please try again later."
+  },
+  {
+    "code": "1277",
+    "name": "ERROR_ACCESS_DISABLED_WEBBLADE",
+    "description": "Windows cannot open this program since it has been disabled."
+  },
+  {
+    "code": "1278",
+    "name": "ERROR_ACCESS_DISABLED_WEBBLADE_TAMPER",
+    "description": "Windows cannot open this program because the license enforcement system has been tampered with or become corrupted."
+  },
+  {
+    "code": "1283",
+    "name": "ERROR_PARAMETER_QUOTA_EXCEEDED",
+    "description": "Data present in one of the parameters is more than the function can operate on."
+  },
+  {
+    "code": "1290",
+    "name": "ERROR_INCOMPATIBLE_SERVICE_SID_TYPE",
+    "description": "The service start failed since one or more services in the same process have an incompatible service SID type setting. A service with restricted service SID type can only coexist in the same process with other services with a restricted SID type. If the service SID type for this service was just configured, the hosting process must be restarted in order to start this service."
+  },
+  {
+    "code": "1294",
+    "name": "ERROR_SERVICE_NOTIFY_CLIENT_LAGGING",
+    "description": "The service notification client is lagging too far behind the current state of services in the machine."
+  },
+  {
+    "code": "1295",
+    "name": "ERROR_DISK_QUOTA_EXCEEDED",
+    "description": "The requested file operation failed because the storage quota was exceeded. To free up disk space, move files to a different location or delete unnecessary files. For more information, contact your system administrator."
+  },
+  {
+    "code": "1297",
+    "name": "ERROR_INCOMPATIBLE_SERVICE_PRIVILEGE",
+    "description": "A privilege that the service requires to function properly does not exist in the service account configuration. You may use the Services Microsoft Management Console (MMC) snap-in (services.msc) and the Local Security Settings MMC snap-in (secpol.msc) to view the service configuration and the account configuration."
+  },
+  {
+    "code": "1300",
+    "name": "ERROR_NOT_ALL_ASSIGNED",
+    "description": "Not all privileges or groups referenced are assigned to the caller."
+  },
+  {
+    "code": "1301",
+    "name": "ERROR_SOME_NOT_MAPPED",
+    "description": "Some mapping between account names and security IDs was not done."
+  },
+  {
+    "code": "1302",
+    "name": "ERROR_NO_QUOTAS_FOR_ACCOUNT",
+    "description": "No system quota limits are specifically set for this account."
+  },
+  {
+    "code": "1303",
+    "name": "ERROR_LOCAL_USER_SESSION_KEY",
+    "description": "No encryption key is available. A well-known encryption key was returned."
+  },
+  {
+    "code": "1304",
+    "name": "ERROR_NULL_LM_PASSWORD",
+    "description": "The password is too complex to be converted to a LAN Manager password. The LAN Manager password returned is a NULL string."
+  },
+  {
+    "code": "1310",
+    "name": "ERROR_CANT_DISABLE_MANDATORY",
+    "description": "The group may not be disabled."
+  },
+  {
+    "code": "1311",
+    "name": "ERROR_NO_LOGON_SERVERS",
+    "description": "There are currently no logon servers available to service the logon request."
+  },
+  {
+    "code": "1312",
+    "name": "ERROR_NO_SUCH_LOGON_SESSION",
+    "description": "A specified logon session does not exist. It may already have been terminated."
+  },
+  {
+    "code": "1313",
+    "name": "ERROR_NO_SUCH_PRIVILEGE",
+    "description": "A specified privilege does not exist."
+  },
+  {
+    "code": "1314",
+    "name": "ERROR_PRIVILEGE_NOT_HELD",
+    "description": "A required privilege is not held by the client."
+  },
+  {
+    "code": "1315",
+    "name": "ERROR_INVALID_ACCOUNT_NAME",
+    "description": "The name provided is not a properly formed account name."
+  },
+  {
+    "code": "1316",
+    "name": "ERROR_USER_EXISTS",
+    "description": "The specified account already exists."
+  },
+  {
+    "code": "1317",
+    "name": "ERROR_NO_SUCH_USER",
+    "description": "The specified account does not exist."
+  },
+  {
+    "code": "1320",
+    "name": "ERROR_MEMBER_IN_GROUP",
+    "description": "Either the specified user account is already a member of the specified group, or the specified group cannot be deleted because it contains a member."
+  },
+  {
+    "code": "1321",
+    "name": "ERROR_MEMBER_NOT_IN_GROUP",
+    "description": "The specified user account is not a member of the specified group account."
+  },
+  {
+    "code": "1322",
+    "name": "ERROR_LAST_ADMIN",
+    "description": "This operation is disallowed as it could result in an administration account being disabled, deleted or unable to log on."
+  },
+  {
+    "code": "1323",
+    "name": "ERROR_WRONG_PASSWORD",
+    "description": "Unable to update the password. The value provided as the current password is incorrect."
+  },
+  {
+    "code": "1324",
+    "name": "ERROR_ILL_FORMED_PASSWORD",
+    "description": "Unable to update the password. The value provided for the new password contains values that are not allowed in passwords."
+  },
+  {
+    "code": "1325",
+    "name": "ERROR_PASSWORD_RESTRICTION",
+    "description": "Unable to update the password. The value provided for the new password does not meet the length, complexity, or history requirements of the domain."
+  },
+  {
+    "code": "1326",
+    "name": "ERROR_LOGON_FAILURE",
+    "description": "The user name or password is incorrect."
+  },
+  {
+    "code": "1327",
+    "name": "ERROR_ACCOUNT_RESTRICTION",
+    "description": "Account restrictions are preventing this user from signing in. For example: blank passwords aren't allowed, sign-in times are limited, or a policy restriction has been enforced."
+  },
+  {
+    "code": "1328",
+    "name": "ERROR_INVALID_LOGON_HOURS",
+    "description": "Your account has time restrictions that keep you from signing in right now."
+  },
+  {
+    "code": "1330",
+    "name": "ERROR_PASSWORD_EXPIRED",
+    "description": "The password for this account has expired."
+  },
+  {
+    "code": "1331",
+    "name": "ERROR_ACCOUNT_DISABLED",
+    "description": "This user can't sign in because this account is currently disabled."
+  },
+  {
+    "code": "1332",
+    "name": "ERROR_NONE_MAPPED",
+    "description": "No mapping between account names and security IDs was done."
+  },
+  {
+    "code": "1341",
+    "name": "ERROR_SERVER_DISABLED",
+    "description": "The server is currently disabled."
+  },
+  {
+    "code": "1342",
+    "name": "ERROR_SERVER_NOT_DISABLED",
+    "description": "The server is currently enabled."
+  },
+  {
+    "code": "1351",
+    "name": "ERROR_CANT_ACCESS_DOMAIN_INFO",
+    "description": "Configuration information could not be read from the domain controller, either because the machine is unavailable, or access has been denied."
+  },
+  {
+    "code": "1352",
+    "name": "ERROR_INVALID_SERVER_STATE",
+    "description": "The security account manager (SAM) or local security authority (LSA) server was in the wrong state to perform the security operation."
+  },
+  {
+    "code": "1353",
+    "name": "ERROR_INVALID_DOMAIN_STATE",
+    "description": "The domain was in the wrong state to perform the security operation."
+  },
+  {
+    "code": "1354",
+    "name": "ERROR_INVALID_DOMAIN_ROLE",
+    "description": "This operation is only allowed for the Primary Domain Controller of the domain."
+  },
+  {
+    "code": "1355",
+    "name": "ERROR_NO_SUCH_DOMAIN",
+    "description": "The specified domain either does not exist or could not be contacted."
+  },
+  {
+    "code": "1356",
+    "name": "ERROR_DOMAIN_EXISTS",
+    "description": "The specified domain already exists."
+  },
+  {
+    "code": "1357",
+    "name": "ERROR_DOMAIN_LIMIT_EXCEEDED",
+    "description": "An attempt was made to exceed the limit on the number of domains per server."
+  },
+  {
+    "code": "1362",
+    "name": "ERROR_NOT_LOGON_PROCESS",
+    "description": "The requested action is restricted for use by logon processes only. The calling process has not registered as a logon process."
+  },
+  {
+    "code": "1363",
+    "name": "ERROR_LOGON_SESSION_EXISTS",
+    "description": "Cannot start a new logon session with an ID that is already in use."
+  },
+  {
+    "code": "1365",
+    "name": "ERROR_BAD_LOGON_SESSION_STATE",
+    "description": "The logon session is not in a state that is consistent with the requested operation."
+  },
+  {
+    "code": "1366",
+    "name": "ERROR_LOGON_SESSION_COLLISION",
+    "description": "The logon session ID is already in use."
+  },
+  {
+    "code": "1367",
+    "name": "ERROR_INVALID_LOGON_TYPE",
+    "description": "A logon request contained an invalid logon type value."
+  },
+  {
+    "code": "1371",
+    "name": "ERROR_SPECIAL_ACCOUNT",
+    "description": "Cannot perform this operation on built-in accounts."
+  },
+  {
+    "code": "1377",
+    "name": "ERROR_MEMBER_NOT_IN_ALIAS",
+    "description": "The specified account name is not a member of the group."
+  },
+  {
+    "code": "1378",
+    "name": "ERROR_MEMBER_IN_ALIAS",
+    "description": "The specified account name is already a member of the group."
+  },
+  {
+    "code": "1380",
+    "name": "ERROR_LOGON_NOT_GRANTED",
+    "description": "Logon failure: the user has not been granted the requested logon type at this computer."
+  },
+  {
+    "code": "1384",
+    "name": "ERROR_TOO_MANY_CONTEXT_IDS",
+    "description": "During a logon attempt, the user's security context accumulated too many security IDs."
+  },
+  {
+    "code": "1385",
+    "name": "ERROR_LOGON_TYPE_NOT_GRANTED",
+    "description": "Logon failure: the user has not been granted the requested logon type at this computer."
+  },
+  {
+    "code": "1386",
+    "name": "ERROR_NT_CROSS_ENCRYPTION_REQUIRED",
+    "description": "A cross-encrypted password is necessary to change a user password."
+  },
+  {
+    "code": "1388",
+    "name": "ERROR_INVALID_MEMBER",
+    "description": "A new member could not be added to a local group because the member has the wrong account type."
+  },
+  {
+    "code": "1390",
+    "name": "ERROR_LM_CROSS_ENCRYPTION_REQUIRED",
+    "description": "A cross-encrypted password is necessary to change this user password."
+  },
+  {
+    "code": "1394",
+    "name": "ERROR_NO_USER_SESSION_KEY",
+    "description": "There is no user session key for the specified logon session."
+  },
+  {
+    "code": "1395",
+    "name": "ERROR_LICENSE_QUOTA_EXCEEDED",
+    "description": "The service being accessed is licensed for a particular number of connections. No more connections can be made to the service at this time because there are already as many connections as the service can accept."
+  },
+  {
+    "code": "1396",
+    "name": "ERROR_WRONG_TARGET_NAME",
+    "description": "The target account name is incorrect."
+  },
+  {
+    "code": "1397",
+    "name": "ERROR_MUTUAL_AUTH_FAILED",
+    "description": "Mutual Authentication failed. The server's password is out of date at the domain controller."
+  },
+  {
+    "code": "1399",
+    "name": "ERROR_CURRENT_DOMAIN_NOT_ALLOWED",
+    "description": "This operation cannot be performed on the current domain."
+  },
+  {
+    "code": "1430",
+    "name": "ERROR_JOURNAL_HOOK_SET",
+    "description": "The journal hook procedure is already installed."
+  },
+  {
+    "code": "1431",
+    "name": "ERROR_HOOK_NOT_INSTALLED",
+    "description": "The hook procedure is not installed."
+  },
+  {
+    "code": "1450",
+    "name": "ERROR_NO_SYSTEM_RESOURCES",
+    "description": "Insufficient system resources exist to complete the requested service."
+  },
+  {
+    "code": "1451",
+    "name": "ERROR_NONPAGED_SYSTEM_RESOURCES",
+    "description": "Insufficient system resources exist to complete the requested service."
+  },
+  {
+    "code": "1452",
+    "name": "ERROR_PAGED_SYSTEM_RESOURCES",
+    "description": "Insufficient system resources exist to complete the requested service."
+  },
+  {
+    "code": "1453",
+    "name": "ERROR_WORKING_SET_QUOTA",
+    "description": "Insufficient quota to complete the requested service."
+  },
+  {
+    "code": "1454",
+    "name": "ERROR_PAGEFILE_QUOTA",
+    "description": "Insufficient quota to complete the requested service."
+  },
+  {
+    "code": "1460",
+    "name": "ERROR_TIMEOUT",
+    "description": "This operation returned because the timeout period expired."
+  },
+  {
+    "code": "1463",
+    "name": "ERROR_SYMLINK_CLASS_DISABLED",
+    "description": "The symbolic link cannot be followed because its type is disabled."
+  },
+  {
+    "code": "1468",
+    "name": "ERROR_WRONG_COMPARTMENT",
+    "description": "The caller made the connection request in the wrong routing compartment."
+  },
+  {
+    "code": "1470",
+    "name": "ERROR_NO_NVRAM_RESOURCES",
+    "description": "Insufficient NVRAM resources exist to complete the requested service. A reboot might be required."
+  },
+  {
+    "code": "1501",
+    "name": "ERROR_EVENTLOG_CANT_START",
+    "description": "No event log file could be opened, so the event logging service did not start."
+  },
+  {
+    "code": "1601",
+    "name": "ERROR_INSTALL_SERVICE_FAILURE",
+    "description": "The Windows Installer Service could not be accessed. This can occur if the Windows Installer is not correctly installed. Contact your support personnel for assistance."
+  },
+  {
+    "code": "1602",
+    "name": "ERROR_INSTALL_USEREXIT",
+    "description": "User cancelled installation."
+  },
+  {
+    "code": "1603",
+    "name": "ERROR_INSTALL_FAILURE",
+    "description": "Fatal error during installation."
+  },
+  {
+    "code": "1604",
+    "name": "ERROR_INSTALL_SUSPEND",
+    "description": "Installation suspended, incomplete."
+  },
+  {
+    "code": "1605",
+    "name": "ERROR_UNKNOWN_PRODUCT",
+    "description": "This action is only valid for products that are currently installed."
+  },
+  {
+    "code": "1612",
+    "name": "ERROR_INSTALL_SOURCE_ABSENT",
+    "description": "The installation source for this product is not available. Verify that the source exists and that you can access it."
+  },
+  {
+    "code": "1613",
+    "name": "ERROR_INSTALL_PACKAGE_VERSION",
+    "description": "This installation package cannot be installed by the Windows Installer service. You must install a Windows service pack that contains a newer version of the Windows Installer service."
+  },
+  {
+    "code": "1614",
+    "name": "ERROR_PRODUCT_UNINSTALLED",
+    "description": "Product is uninstalled."
+  },
+  {
+    "code": "1618",
+    "name": "ERROR_INSTALL_ALREADY_RUNNING",
+    "description": "Another installation is already in progress. Complete that installation before proceeding with this install."
+  },
+  {
+    "code": "1619",
+    "name": "ERROR_INSTALL_PACKAGE_OPEN_FAILED",
+    "description": "This installation package could not be opened. Verify that the package exists and that you can access it, or contact the application vendor to verify that this is a valid Windows Installer package."
+  },
+  {
+    "code": "1620",
+    "name": "ERROR_INSTALL_PACKAGE_INVALID",
+    "description": "This installation package could not be opened. Contact the application vendor to verify that this is a valid Windows Installer package."
+  },
+  {
+    "code": "1621",
+    "name": "ERROR_INSTALL_UI_FAILURE",
+    "description": "There was an error starting the Windows Installer service user interface. Contact your support personnel."
+  },
+  {
+    "code": "1622",
+    "name": "ERROR_INSTALL_LOG_FAILURE",
+    "description": "Error opening installation log file. Verify that the specified log file location exists and that you can write to it."
+  },
+  {
+    "code": "1623",
+    "name": "ERROR_INSTALL_LANGUAGE_UNSUPPORTED",
+    "description": "The language of this installation package is not supported by your system."
+  },
+  {
+    "code": "1624",
+    "name": "ERROR_INSTALL_TRANSFORM_FAILURE",
+    "description": "Error applying transforms. Verify that the specified transform paths are valid."
+  },
+  {
+    "code": "1625",
+    "name": "ERROR_INSTALL_PACKAGE_REJECTED",
+    "description": "This installation is forbidden by system policy. Contact your system administrator."
+  },
+  {
+    "code": "1631",
+    "name": "ERROR_CREATE_FAILED",
+    "description": "The Windows Installer service failed to start. Contact your support personnel."
+  },
+  {
+    "code": "1632",
+    "name": "ERROR_INSTALL_TEMP_UNWRITABLE",
+    "description": "The Temp folder is on a drive that is full or is inaccessible. Free up space on the drive or verify that you have write permission on the Temp folder."
+  },
+  {
+    "code": "1633",
+    "name": "ERROR_INSTALL_PLATFORM_UNSUPPORTED",
+    "description": "This installation package is not supported by this processor type. Contact your product vendor."
+  },
+  {
+    "code": "1634",
+    "name": "ERROR_INSTALL_NOTUSED",
+    "description": "Component not used on this computer."
+  },
+  {
+    "code": "1635",
+    "name": "ERROR_PATCH_PACKAGE_OPEN_FAILED",
+    "description": "This update package could not be opened. Verify that the update package exists and that you can access it, or contact the application vendor to verify that this is a valid Windows Installer update package."
+  },
+  {
+    "code": "1636",
+    "name": "ERROR_PATCH_PACKAGE_INVALID",
+    "description": "This update package could not be opened. Contact the application vendor to verify that this is a valid Windows Installer update package."
+  },
+  {
+    "code": "1637",
+    "name": "ERROR_PATCH_PACKAGE_UNSUPPORTED",
+    "description": "This update package cannot be processed by the Windows Installer service. You must install a Windows service pack that contains a newer version of the Windows Installer service."
+  },
+  {
+    "code": "1638",
+    "name": "ERROR_PRODUCT_VERSION",
+    "description": "Another version of this product is already installed. Installation of this version cannot continue. To configure or remove the existing version of this product, use Add/Remove Programs on the Control Panel."
+  },
+  {
+    "code": "1639",
+    "name": "ERROR_INVALID_COMMAND_LINE",
+    "description": "Invalid command line argument. Consult the Windows Installer SDK for detailed command line help."
+  },
+  {
+    "code": "1640",
+    "name": "ERROR_INSTALL_REMOTE_DISALLOWED",
+    "description": "Only administrators have permission to add, remove, or configure server software during a Terminal services remote session. If you want to install or configure software on the server, contact your network administrator."
+  },
+  {
+    "code": "1642",
+    "name": "ERROR_PATCH_TARGET_NOT_FOUND",
+    "description": "The upgrade cannot be installed by the Windows Installer service because the program to be upgraded may be missing, or the upgrade may update a different version of the program. Verify that the program to be upgraded exists on your computer and that you have the correct upgrade."
+  },
+  {
+    "code": "1644",
+    "name": "ERROR_INSTALL_TRANSFORM_REJECTED",
+    "description": "One or more customizations are not permitted by software restriction policy."
+  },
+  {
+    "code": "1645",
+    "name": "ERROR_INSTALL_REMOTE_PROHIBITED",
+    "description": "The Windows Installer does not permit installation from a Remote Desktop Connection."
+  },
+  {
+    "code": "1646",
+    "name": "ERROR_PATCH_REMOVAL_UNSUPPORTED",
+    "description": "Uninstallation of the update package is not supported."
+  },
+  {
+    "code": "1651",
+    "name": "ERROR_PATCH_MANAGED_ADVERTISED_PRODUCT",
+    "description": "Windows Installer does not permit updating of managed advertised products. At least one feature of the product must be installed before applying the update."
+  },
+  {
+    "code": "1652",
+    "name": "ERROR_INSTALL_SERVICE_SAFEBOOT",
+    "description": "The Windows Installer service is not accessible in Safe Mode. Please try again when your computer is not in Safe Mode or you can use System Restore to return your machine to a previous good state."
+  },
+  {
+    "code": "1654",
+    "name": "ERROR_INSTALL_REJECTED",
+    "description": "The app that you are trying to run is not supported on this version of Windows."
+  },
+  {
+    "code": "0x80004001",
+    "name": "E_NOTIMPL",
+    "description": "Not implemented. The called interface method exists but isn't implemented."
+  },
+  {
+    "code": "0x80004005",
+    "name": "E_FAIL",
+    "description": "Unspecified error — a generic COM failure with no more specific code available."
+  },
+  {
+    "code": "0x80040154",
+    "name": "REGDB_E_CLASSNOTREG",
+    "description": "Class not registered — a COM component referenced by its CLSID isn't registered on this machine."
+  },
+  {
+    "code": "0x80070002",
+    "name": "ERROR_FILE_NOT_FOUND (HRESULT)",
+    "description": "The system cannot find the file specified — HRESULT-wrapped form of Win32 error 2."
+  },
+  {
+    "code": "0x80070003",
+    "name": "ERROR_PATH_NOT_FOUND (HRESULT)",
+    "description": "The system cannot find the path specified — HRESULT-wrapped form of Win32 error 3."
+  },
+  {
+    "code": "0x80070005",
+    "name": "E_ACCESSDENIED",
+    "description": "Access is denied — the HRESULT form of Win32 error 5, commonly seen in installers and Windows Update."
+  },
+  {
+    "code": "0x80070006",
+    "name": "E_HANDLE",
+    "description": "The handle is invalid — HRESULT-wrapped form of Win32 error 6."
+  },
+  {
+    "code": "0x8007000E",
+    "name": "E_OUTOFMEMORY",
+    "description": "Not enough memory or storage is available to complete this operation."
+  },
+  {
+    "code": "0x80070020",
+    "name": "ERROR_SHARING_VIOLATION (HRESULT)",
+    "description": "The process cannot access the file because it is being used by another process."
+  },
+  {
+    "code": "0x80070057",
+    "name": "E_INVALIDARG",
+    "description": "The parameter is incorrect — HRESULT-wrapped form of Win32 error 87."
+  },
+  {
+    "code": "0x800700B7",
+    "name": "ERROR_ALREADY_EXISTS (HRESULT)",
+    "description": "Cannot create a file when that file already exists."
+  },
+  {
+    "code": "0x8007045D",
+    "name": "ERROR_IO_DEVICE (HRESULT)",
+    "description": "The request could not be performed because of an I/O device error — often a failing disk or media."
+  },
+  {
+    "code": "0x80070570",
+    "name": "ERROR_FILE_CORRUPT (HRESULT)",
+    "description": "The file or directory is corrupted and unreadable."
+  },
+  {
+    "code": "0x80072745",
+    "name": "WSAECONNRESET (HRESULT)",
+    "description": "An existing connection was forcibly closed by the remote host, often seen during Windows Update or WinHTTP calls."
+  },
+  {
+    "code": "0x80072EE7",
+    "name": "WININET_E_NAME_NOT_RESOLVED",
+    "description": "The server name or address could not be resolved — a DNS lookup failure."
+  },
+  {
+    "code": "0x800F0922",
+    "name": "CBS_E_INSUFFICIENT_DISK_SPACE",
+    "description": "Windows Update failed because there isn't enough free space on the system reserved partition."
+  },
+  {
+    "code": "0x80131500",
+    "name": ".NET Runtime — unspecified COM exception",
+    "description": "A generic unspecified error surfaced by the .NET runtime; check the inner exception or event log for the real cause."
+  },
+  {
+    "code": "0x8024402C",
+    "name": "WU_E_PT_WINHTTP_NAME_NOT_RESOLVED",
+    "description": "Windows Update couldn't connect — the update service name couldn't be resolved, usually a network or DNS issue."
+  },
+  {
+    "code": "0xC0000005",
+    "name": "STATUS_ACCESS_VIOLATION",
+    "description": "The process tried to read or write memory it doesn't have access to. The classic cause of an application crash."
+  },
+  {
+    "code": "0xC0000034",
+    "name": "STATUS_OBJECT_NAME_NOT_FOUND",
+    "description": "The referenced file, registry key, or object could not be found."
+  },
+  {
+    "code": "0xC0000135",
+    "name": "STATUS_DLL_NOT_FOUND",
+    "description": "A required DLL could not be found when starting the process."
+  },
+  {
+    "code": "0xC0000142",
+    "name": "STATUS_DLL_INIT_FAILED",
+    "description": "A DLL was found but failed to initialize, often due to a missing dependency or corrupted install."
+  },
+  {
+    "code": "0xC000021A",
+    "name": "STATUS_SYSTEM_PROCESS_TERMINATED",
+    "description": "A critical system process (e.g. winlogon.exe or csrss.exe) terminated, forcing a logoff or blue screen."
+  },
+  {
+    "code": "0xC1900101",
+    "name": "Windows Setup — rollback during upgrade",
+    "description": "Windows Setup rolled back during an in-place upgrade, most often caused by an incompatible driver."
+  }
+]

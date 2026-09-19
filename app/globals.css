@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #faf9f6;
+  --color-text: #1b1a17;
+  --color-text-dim: #6b6a63;
+  --color-text-faint: #a6a49b;
+  --color-line: #dedbd2;
+  --color-accent: #a23a25;
+}
+
+@theme inline {
+  --font-serif: var(--font-source-serif), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-ibm-plex-mono), "SFMono-Regular", Consolas,
+    "Liberation Mono", monospace;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #171613;
+  --color-text: #edebe4;
+  --color-text-dim: #9c9a90;
+  --color-text-faint: #6b6a62;
+  --color-line: #37352e;
+  --color-accent: #e08a6b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #171613;
+    --color-text: #edebe4;
+    --color-text-dim: #9c9a90;
+    --color-text-faint: #6b6a62;
+    --color-line: #37352e;
+    --color-accent: #e08a6b;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+}
+
+/* Native <select> popups otherwise fall back to the browser's default
+   white panel, which is unreadable against our dark-mode palette. */
+select {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+select option {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* The landing page locks itself to one viewport (.home-shell, set in
+   app/page.tsx) so it never scrolls on normal screens. On small/short
+   viewports that lock is relaxed so its content can't get clipped. */
+@media (max-width: 620px), (max-height: 600px) {
+  .home-shell {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+}
