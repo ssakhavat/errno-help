@@ -1,5 +1,7 @@
 # errno.help
 
+🔗 **Live:** [errno-help.vercel.app](https://errno-help.vercel.app/)
+
 A plain, text-first reference and calculator for the things IT and developer
 work throws at you — error codes, subnets, tokens, hashes, cron strings. You
 have something cryptic; this site helps you make sense of it.
