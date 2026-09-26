@@ -19,6 +19,7 @@ const tools = [
   { name: "Base64 encode / decode", desc: "UTF-8 safe, local", href: "/tools/base64" },
   { name: "URL encode / decode", desc: "encode, decode", href: "/tools/url-encode" },
   { name: "Regex tester", desc: "live matches, groups", href: "/tools/regex" },
+  { name: "Domain health report", desc: "DNS, WHOIS, ASN, GeoIP, ports", href: "/tools/domain-health" },
 ];
 
 export default function Home() {

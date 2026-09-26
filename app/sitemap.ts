@@ -23,6 +23,7 @@ const TOOL_PATHS = [
   "/tools/base64",
   "/tools/url-encode",
   "/tools/regex",
+  "/tools/domain-health",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

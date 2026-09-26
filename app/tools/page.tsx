@@ -29,6 +29,7 @@ const categories: Category[] = [
       { name: "ASN lookup", desc: "IP to autonomous system, or AS details", href: "/tools/asn" },
       { name: "GeoIP lookup", desc: "approximate country, city, coordinates", href: "/tools/geoip" },
       { name: "Port checker", desc: "common ports, rate-limited", href: "/tools/port-checker" },
+      { name: "Domain health report", desc: "DNS, WHOIS, ASN, GeoIP, ports — combined", href: "/tools/domain-health" },
     ],
   },
   {
