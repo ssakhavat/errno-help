@@ -39,6 +39,9 @@ const categories: Category[] = [
       { name: "UUID / password generator", desc: "cryptographically random", href: "/tools/uuid" },
       { name: "YAML ⇄ JSON", desc: "convert and validate", href: "/tools/yaml" },
       { name: "Cron parser", desc: "human-readable schedule", href: "/tools/cron" },
+      { name: "Base64 encode / decode", desc: "UTF-8 safe, local", href: "/tools/base64" },
+      { name: "URL encode / decode", desc: "encodeURIComponent / decode", href: "/tools/url-encode" },
+      { name: "Regex tester", desc: "live matches, groups", href: "/tools/regex" },
     ],
   },
   {

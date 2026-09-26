@@ -20,6 +20,9 @@ const TOOL_PATHS = [
   "/tools/chmod",
   "/tools/kubectl",
   "/tools/network",
+  "/tools/base64",
+  "/tools/url-encode",
+  "/tools/regex",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
