@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { detectToolForInput, TOOL_ROUTES } from "@/lib/detectInput";
+import { detectToolForInput, TOOL_ROUTES } from "@/lib/detectInputType";
 
 const tools = [
   { name: "CIDR / IPv4", desc: "subnet, mask, hosts", href: "/tools/cidr" },

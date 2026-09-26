@@ -54,7 +54,13 @@ const categories: Category[] = [
   },
 ];
 
-export default function ToolsPage() {
+export default async function ToolsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ unrecognized?: string }>;
+}) {
+  const { unrecognized } = await searchParams;
+
   return (
     <div className="mx-auto min-h-screen w-full max-w-[760px] px-6 py-[clamp(20px,5vh,48px)]">
       <ToolHeader />
@@ -65,6 +71,13 @@ export default function ToolsPage() {
       <p className="m-0 mb-10 max-w-[58ch] text-sm leading-[1.7] text-text-dim">
         Every lookup and calculator on errno.help, grouped by category.
       </p>
+
+      {unrecognized && (
+        <p className="m-0 mb-10 text-[13px] text-accent">
+          Couldn&apos;t tell what kind of code &quot;{unrecognized}&quot; is —
+          browse the tools below.
+        </p>
+      )}
 
       <div className="flex flex-col gap-10">
         {categories.map((category) => (

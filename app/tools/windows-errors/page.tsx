@@ -1,12 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { searchEventIds, searchWindowsErrors } from "@/lib/windowsLookup";
 import { ToolHeader } from "@/components/ToolHeader";
 import { CopyButton } from "@/components/CopyButton";
 
 export default function WindowsErrorsPage() {
   const [query, setQuery] = useState("0x80070005");
+
+  useEffect(() => {
+    // Deep-link prefill from the global search (?q=...): window isn't
+    // available at prerender time, so this can only run after mount, and it
+    // only ever fires once per page load.
+    const q = new URLSearchParams(window.location.search).get("q");
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (q) setQuery(q);
+  }, []);
+
 
   const errorResults = searchWindowsErrors(query);
   const eventResults = searchEventIds(query);

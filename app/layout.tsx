@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Source_Serif_4, IBM_Plex_Mono } from "next/font/google";
+import { GlobalSearch } from "@/components/GlobalSearch";
 import "./globals.css";
 
 const sourceSerif4 = Source_Serif_4({
@@ -29,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${sourceSerif4.variable} ${ibmPlexMono.variable}`}>
-      <body className="min-h-screen">{children}</body>
+      <body className="min-h-screen">
+        {children}
+        <GlobalSearch />
+      </body>
     </html>
   );
 }

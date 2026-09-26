@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { calculateCidr, isCidrError } from "@/lib/cidr";
 import { ToolHeader } from "@/components/ToolHeader";
 import { ClearButton } from "@/components/ClearButton";
@@ -8,6 +8,16 @@ import { CopyButton } from "@/components/CopyButton";
 
 export default function CidrPage() {
   const [value, setValue] = useState("");
+
+  useEffect(() => {
+    // Deep-link prefill from the global search (?q=...): window isn't
+    // available at prerender time, so this can only run after mount, and it
+    // only ever fires once per page load.
+    const q = new URLSearchParams(window.location.search).get("q");
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (q) setValue(q);
+  }, []);
+
   const result = value.trim() ? calculateCidr(value) : null;
   const error = result && isCidrError(result) ? result.error : null;
   const data = result && !isCidrError(result) ? result : null;

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { decodeJwt, isJwtError } from "@/lib/jwt";
 import { ToolHeader } from "@/components/ToolHeader";
 import { ClearButton } from "@/components/ClearButton";
@@ -11,6 +11,16 @@ const SAMPLE_PLACEHOLDER =
 
 export default function JwtPage() {
   const [value, setValue] = useState("");
+
+  useEffect(() => {
+    // Deep-link prefill from the global search (?q=...): window isn't
+    // available at prerender time, so this can only run after mount, and it
+    // only ever fires once per page load.
+    const q = new URLSearchParams(window.location.search).get("q");
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (q) setValue(q);
+  }, []);
+
   const result = value.trim() ? decodeJwt(value) : null;
   const error = result && isJwtError(result) ? result.error : null;
   const decoded = result && !isJwtError(result) ? result : null;
