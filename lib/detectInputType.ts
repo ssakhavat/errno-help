@@ -26,3 +26,52 @@ export function detectToolForInput(raw: string): DetectedTool | null {
   if (DECIMAL_RE.test(value)) return "windows-errors";
   return null;
 }
+
+// Values that must never appear in a URL (and so in history, Referer
+// headers, or server logs) are handed to the target page through
+// sessionStorage instead of ?q=. Everything else keeps the shareable ?q=.
+const HANDOFF_TOOLS = new Set<DetectedTool>(["jwt"]);
+const HANDOFF_KEY = "errno:prefill";
+
+export interface PrefillTarget {
+  href: string;
+  /** Set when the value must be stashed with stashPrefill before navigating. */
+  handoff: { tool: DetectedTool; value: string } | null;
+}
+
+export function prefillTarget(tool: DetectedTool, value: string): PrefillTarget {
+  if (HANDOFF_TOOLS.has(tool)) {
+    return { href: TOOL_ROUTES[tool], handoff: { tool, value } };
+  }
+  return {
+    href: `${TOOL_ROUTES[tool]}?q=${encodeURIComponent(value)}`,
+    handoff: null,
+  };
+}
+
+// Storage can be unavailable (privacy modes, blocked site data); the target
+// page then simply opens empty rather than falling back to the URL.
+export function stashPrefill(tool: DetectedTool, value: string): void {
+  try {
+    sessionStorage.setItem(HANDOFF_KEY, JSON.stringify({ tool, value }));
+  } catch {}
+}
+
+/** Reads the stashed value for `tool` once, and always clears it. */
+export function takePrefill(tool: DetectedTool): string | null {
+  try {
+    const raw = sessionStorage.getItem(HANDOFF_KEY);
+    sessionStorage.removeItem(HANDOFF_KEY);
+    if (!raw) return null;
+    const parsed: unknown = JSON.parse(raw);
+    if (
+      typeof parsed === "object" &&
+      parsed !== null &&
+      (parsed as { tool?: unknown }).tool === tool &&
+      typeof (parsed as { value?: unknown }).value === "string"
+    ) {
+      return (parsed as { value: string }).value;
+    }
+  } catch {}
+  return null;
+}

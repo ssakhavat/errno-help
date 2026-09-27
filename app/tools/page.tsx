@@ -21,6 +21,12 @@ interface Category {
 
 const categories: Category[] = [
   {
+    name: "Start here",
+    tools: [
+      { name: "Diagnose this blob", desc: "paste a log line — every code in it, explained", href: "/tools/diagnose" },
+    ],
+  },
+  {
     name: "Network & security",
     tools: [
       { name: "CIDR / IPv4 calculator", desc: "network, broadcast, mask, usable hosts", href: "/tools/cidr" },

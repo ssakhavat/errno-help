@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { decodeJwt, isJwtError } from "@/lib/jwt";
+import { takePrefill } from "@/lib/detectInputType";
 import { ToolHeader } from "@/components/ToolHeader";
 import { ClearButton } from "@/components/ClearButton";
 import { CopyButton } from "@/components/CopyButton";
@@ -13,12 +14,13 @@ export default function JwtPage() {
   const [value, setValue] = useState("");
 
   useEffect(() => {
-    // Deep-link prefill from the global search (?q=...): window isn't
-    // available at prerender time, so this can only run after mount, and it
-    // only ever fires once per page load.
-    const q = new URLSearchParams(window.location.search).get("q");
+    // Prefill handed over by the global search or Diagnose. Tokens travel
+    // through sessionStorage, never ?q=, so they stay out of URLs and server
+    // logs; takePrefill clears the value so it is used exactly once.
+    // sessionStorage isn't available at prerender time, hence after mount.
+    const token = takePrefill("jwt");
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (q) setValue(q);
+    if (token) setValue(token);
   }, []);
 
   const result = value.trim() ? decodeJwt(value) : null;

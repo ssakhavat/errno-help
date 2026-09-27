@@ -80,6 +80,9 @@ Open [http://localhost:3000](http://localhost:3000).
 - `npm run build` — production build
 - `npm run start` — run the production build
 - `npm run lint` — lint the project
+- `npm run test` — run the unit tests in `tests/` with Node's built-in
+  `node:test` runner (no extra dependencies; needs Node 22.18+ for
+  TypeScript type stripping)
 - `npm run license-report` — regenerate `OPEN_SOURCE_NOTICES.md` from the
   installed dependency tree
 

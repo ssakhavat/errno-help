@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://errno-help.vercel.app";
 
 const TOOL_PATHS = [
+  "/tools/diagnose",
   "/tools/cidr",
   "/tools/dns",
   "/tools/whois",

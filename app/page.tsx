@@ -6,6 +6,7 @@ import Link from "next/link";
 import { detectToolForInput, TOOL_ROUTES } from "@/lib/detectInputType";
 
 const tools = [
+  { name: "Diagnose this blob", desc: "paste a log, explain it", href: "/tools/diagnose" },
   { name: "CIDR / IPv4", desc: "subnet, mask, hosts", href: "/tools/cidr" },
   { name: "JWT decoder", desc: "header, payload, claims", href: "/tools/jwt" },
   { name: "Hash generator", desc: "SHA-256, SHA-1, MD5", href: "/tools/hash" },

@@ -2,7 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { detectToolForInput, TOOL_ROUTES } from "@/lib/detectInputType";
+import {
+  detectToolForInput,
+  prefillTarget,
+  stashPrefill,
+  TOOL_ROUTES,
+} from "@/lib/detectInputType";
 
 export const OPEN_SEARCH_EVENT = "errno:open-search";
 
@@ -50,7 +55,9 @@ export function GlobalSearch() {
   function go() {
     if (!trimmed) return;
     if (detected) {
-      router.push(`${TOOL_ROUTES[detected]}?q=${encodeURIComponent(trimmed)}`);
+      const target = prefillTarget(detected, trimmed);
+      if (target.handoff) stashPrefill(target.handoff.tool, target.handoff.value);
+      router.push(target.href);
     } else {
       router.push(`/tools?unrecognized=${encodeURIComponent(trimmed)}`);
     }
